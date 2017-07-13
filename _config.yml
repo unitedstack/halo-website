@@ -1,0 +1,10 @@
+encoding: utf-8
+repository: unitedstack.github.io/halo
+github: [metadata]
+defaults:
+  - scope:
+      path: design
+      type: pages
+    values:
+      layout: default
+
