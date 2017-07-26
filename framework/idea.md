@@ -15,7 +15,7 @@ HALO是一种SPA(Single Page Applciation)页面，其意味着加载单个HTML �
 
 <!-- ![idea](/img/framework/nodejs_flow.png) -->
 <p style="text-align: center">
-  <img src="img/framework/nodejs_flow.png" style="width: 400px; max-width: 100%">
+  <img src="../img/framework/nodejs_flow.png" style="width: 400px; max-width: 100%">
 </p>
 
 它的工作原理是相当有趣的。传统的网络服务技术，是每个新增一个连接（请求）便生成一个新的线程，这个新的线程会占用系统内存，最终会占掉所有的可用内存。而 Node.js 仅仅只运行在一个单线程中，使用非阻塞的异步 I/O 调用，所有连接都由该线程处理，在 libuv 的加分下，可以允许其支持数万并发连接（全部挂在该线程的事件循环中）。

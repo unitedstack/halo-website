@@ -3,7 +3,7 @@
 弹窗是点击面板的按钮之后弹出的交互界面。一般分为默认弹窗的和自定义的弹窗，自定义的弹窗样式可以直接写入样式，在这里介绍默认弹窗为用config文件写出的界面，不需要额外写样式，以下是一个弹窗示例。
 
 <p style="text-align: center">
-  <img src="img/develop/popup.png" style="width: 400px">
+  <img src="../img/develop/popup.png" style="width: 400px">
 </p>
 
 视图部分的配置文件以`kunkka/halo/client/dashboard/modules/network/pop/create_network/config.json`文件举例。
