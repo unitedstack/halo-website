@@ -4,16 +4,16 @@
       subitems:
         - id: source
           title: 起源
-          href: /framework/source.html
+          href: ../framework/source.html
         - id: idea
           title: 理念
-          href: /framework/idea.html
+          href: ../framework/idea.html
     - id: framework
       title: 架构
       subitems:
         - id: system-framework
           title: 系统架构
-          href: /framework/system-framework.html
+          href: ../framework/system-framework.html
         - id: deploy-framework
           title: 部署架构
-          href: /framework/deploy-framework.html
+          href: ../framework/deploy-framework.html
