@@ -1,0 +1,706 @@
+body {
+  font-size: 15px;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Heiti SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif !important;
+}
+body .whole-page {
+  width: 1160px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+body .whole-page .site-page-slidebar {
+  width: 100%;
+}
+body .whole-page .site-page-slidebar .site-menu {
+  width: 25.86%;
+  float: left;
+  box-sizing: border-box;
+}
+body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul {
+  list-style: none;
+}
+body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul .slidebar-title {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul li {
+  list-style: none;
+  padding-bottom: 15px;
+}
+body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul li a {
+  text-decoration: none;
+  color: #666666;
+}
+body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul li a:hover {
+  color: #42B9E5;
+}
+body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul li:last-child {
+  padding-bottom: 50px;
+}
+body .whole-page .site-content {
+  width: 74%;
+  float: left;
+}
+body .whole-page .site-content h2 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #333333;
+  letter-spacing: 2.6px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+body .whole-page .site-content p {
+  color: #2c2c2c;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  padding-bottom: 14px;
+}
+body .whole-page .site-content h6 {
+  color: #2c2c2c;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  padding-bottom: 14px;
+  padding-left: 18px;
+}
+body .whole-page .site-content ul {
+  padding-left: 36px;
+}
+body .whole-page .site-content ul li {
+  list-style: initial;
+  color: #2c2c2c;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  padding-bottom: 14px;
+}
+body .whole-page .site-content ol {
+  padding-left: 36px;
+}
+body .whole-page .site-content ol li {
+  color: #2c2c2c;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  padding-bottom: 14px;
+}
+body .whole-page .site-content a {
+  text-decoration: none;
+  color: #42B9E5;
+}
+body .whole-page .site-content h4 {
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+body .whole-page .site-content .highlighter-rouge {
+  margin-bottom: 20px;
+  background: #F9FBFB;
+  border-radius: 2px;
+  overflow: auto;
+}
+body .whole-page .docs-prevnext {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+body .nav-footer {
+  width: 100%;
+  height: 378px;
+  box-sizing: border-box;
+  border: none;
+  line-height: 20px;
+  background: linear-gradient(#0E4563, #042335);
+  color: #ffffff;
+  padding-top: 61px;
+}
+body .nav-footer .sitemap {
+  width: 1160px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body .nav-footer .sitemap .left {
+  width: 320px;
+  float: left;
+}
+body .nav-footer .sitemap .left .skip img {
+  display: block;
+}
+body .nav-footer .sitemap .left .skip .ustack-logo {
+  width: 195px;
+  padding-bottom: 22px;
+}
+body .nav-footer .sitemap .left .skip .halo-logo {
+  width: 93px;
+  padding-bottom: 62px;
+}
+body .nav-footer .sitemap .left p {
+  opacity: 0.99;
+  color: #999999;
+}
+body .nav-footer .sitemap .left .underline {
+  text-decoration: underline;
+  padding-top: 10px;
+}
+body .nav-footer .sitemap .right {
+  float: left;
+}
+body .nav-footer .sitemap .right div {
+  float: left;
+}
+body .nav-footer .sitemap .right div h5 {
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+body .nav-footer .sitemap .right div a {
+  display: block;
+  text-decoration: none;
+  color: #cccccc;
+  padding-bottom: 14px;
+}
+body .nav-footer .sitemap .right div:not(:first-child) {
+  margin-left: 100px;
+}
+body .mobile-footer {
+  display: none;
+}
+body .home-content .show .home-item {
+  width: 100%;
+}
+body .home-content .show .home-item .item {
+  width: 1160px;
+  height: 630px;
+  margin: 0 auto;
+  padding: 100px 0 40px 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+body .home-content .show .home-item .item .left {
+  width: 50%;
+  float: left;
+}
+body .home-content .show .home-item .item .left img {
+  width: 580px;
+  height: 430px;
+}
+body .home-content .show .home-item .item .left .mobile-img {
+  display: none;
+}
+body .home-content .show .home-item .item .right {
+  width: 50%;
+  float: left;
+  padding-right: 50px;
+  padding-top: 98px;
+  box-sizing: border-box;
+}
+body .home-content .show .home-item .item .right .title {
+  font-size: 40px;
+  color: #2c2c2c;
+  letter-spacing: 2.6px;
+  line-height: 56px;
+  margin-bottom: 30px;
+}
+body .home-content .show .home-item .item .right .intro {
+  font-size: 20px;
+  color: #999999;
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+body .home-content .show .home-item .item .right .detail {
+  display: block;
+  width: 130px;
+  height: 40px;
+  background: #42B9E5;
+  border-radius: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1.08px;
+}
+body .home-content .show .home-item .item .right .detail:hover {
+  background: #46c5f3;
+}
+body .home-content .show .home-item:nth-of-type(even) {
+  background-color: #F7F9FA;
+}
+body .home-content .show .home-item:nth-of-type(even) .item .left {
+  float: right;
+}
+body .home-content .show .home-item:nth-of-type(even) .item .right {
+  float: right;
+  padding-right: 0;
+  padding-left: 50px;
+}
+body .home-content .show .home-item:first-child .item > .right {
+  padding-top: 78px;
+}
+body .home-content .manage {
+  position: relative;
+  height: 510px;
+}
+body .home-content .manage .manage-title {
+  padding-top: 100px;
+  font-size: 40px;
+  color: #2c2c2c;
+  letter-spacing: 2.6px;
+  text-align: center;
+  margin: 0;
+}
+body .home-content .manage .manage-intro {
+  font-size: 20px;
+  color: #999999;
+  letter-spacing: 2px;
+  line-height: 28px;
+  width: 490px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+body .home-content .manage .image {
+  text-align: center;
+  margin: 0;
+}
+body .home-content .manage .image img {
+  width: 922px;
+  height: 529px;
+  text-align: center;
+}
+body .home-footer {
+  height: 706px;
+  background: url(/img/footer.png) no-repeat;
+}
+body .home-footer .sitemap {
+  padding-top: 368px;
+}
+body .about-content {
+  overflow: hidden;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+body .about-content .about-title {
+  font-size: 32px;
+  line-height: 45px;
+  color: #2c2c2c;
+  letter-spacing: 2.08px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+body .about-content ul {
+  overflow: hidden;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E6E6E6;
+}
+body .about-content ul li {
+  width: 31.89%;
+  height: 173px;
+  float: left;
+  background: #F7F9FA;
+  border-radius: 4px;
+  margin-right: 25px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+body .about-content ul li .intro {
+  font-size: 24px;
+  line-height: 33px;
+  color: #2c2c2c;
+  letter-spacing: 1.56px;
+  padding-bottom: 20px;
+}
+body .about-content ul li .detail {
+  font-size: 18px;
+  color: #666666;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+body .about-content ul li:last-child {
+  margin-right: 0;
+}
+body .about-content .about-ued {
+  padding-top: 60px;
+}
+body .about-content .about-ued .ued-title {
+  font-size: 32px;
+  line-height: 45px;
+  color: #2c2c2c;
+  letter-spacing: 2.08px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+body .about-content .about-ued .ued-brief {
+  width: 890px;
+  height: 60px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #666666;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+body .about-content .about-ued img {
+  float: left;
+}
+body .about-content .about-ued .ustack-work {
+  margin-right: 40px;
+}
+body .about-content .about-ued .ustack-logo {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+body .about-content .about-ued .ustack-record {
+  margin-bottom: 10px;
+}
+body .about-content .about-ued .ustack-celebrate {
+  margin-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  body .whole-page {
+    width: 100% !important;
+    padding-top: 0 !important;
+    padding-bottom: 60px !important;
+  }
+  body .whole-page .site-page-slidebar .site-menu {
+    display: none;
+  }
+  body .whole-page .site-page-slidebar .site-content {
+    width: 100%;
+    padding: 0 4.2%;
+    box-sizing: border-box;
+    clear: both;
+  }
+  body .whole-page .site-page-slidebar .site-content h2 {
+    font-size: 30px;
+    line-height: 42px;
+    color: #2c2c2c;
+    letter-spacing: 2.4px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  body .whole-page .site-page-slidebar .site-content p {
+    color: #2c2c2c;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-bottom: 14px;
+  }
+  body .whole-page .site-page-slidebar .site-content h6 {
+    color: #2c2c2c;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-bottom: 14px;
+    padding-left: 18px;
+  }
+  body .whole-page .site-page-slidebar .site-content ul {
+    padding-left: 36px;
+  }
+  body .whole-page .site-page-slidebar .site-content ul li {
+    color: #2c2c2c;
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding-bottom: 14px;
+  }
+  body .whole-page .site-page-slidebar .site-content ol {
+    padding-left: 36px;
+  }
+  body .whole-page .site-page-slidebar .site-content ol li {
+    color: #2c2c2c;
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding-bottom: 14px;
+  }
+  body .whole-page .site-page-slidebar .site-content a {
+    text-decoration: none;
+    color: #42B9E5;
+  }
+  body .whole-page .site-page-slidebar .site-content h4 {
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  body .whole-page .site-page-slidebar .site-content img {
+    width: 100% !important;
+  }
+  body .home-content .show .home-item {
+    width: 100%;
+  }
+  body .home-content .show .home-item .item {
+    width: 100%;
+    height: auto;
+    padding: 40px 14%;
+    box-sizing: border-box;
+  }
+  body .home-content .show .home-item .item .left {
+    width: 100%;
+    clear: both;
+  }
+  body .home-content .show .home-item .item .left img {
+    display: none;
+  }
+  body .home-content .show .home-item .item .left .mobile-img {
+    display: block;
+    margin: 0 auto;
+  }
+  body .home-content .show .home-item .item .left .mobile-img-one {
+    width: 160px;
+    height: 176px;
+  }
+  body .home-content .show .home-item .item .left .mobile-img-two {
+    width: 202px;
+    height: 194px;
+  }
+  body .home-content .show .home-item .item .left .mobile-img-three {
+    width: 270px;
+    height: 137px;
+  }
+  body .home-content .show .home-item .item .left .mobile-img-four {
+    width: 233px;
+    height: 194px;
+  }
+  body .home-content .show .home-item .item .right {
+    width: 100%;
+    clear: both;
+    padding-right: 0;
+    padding-top: 30px;
+  }
+  body .home-content .show .home-item .item .right .title {
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  body .home-content .show .home-item .item .right .intro {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  body .home-content .show .home-item .item .right .detail {
+    width: 92px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0 auto;
+  }
+  body .home-content .show .home-item:first-child .item > .right {
+    padding-top: 30px !important;
+  }
+  body .home-content .manage {
+    height: auto;
+  }
+  body .home-content .manage .manage-title {
+    padding-top: 40px;
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    line-height: 28px;
+  }
+  body .home-content .manage .manage-intro {
+    width: 74%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+  }
+  body .home-content .manage .image {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  body .home-content .manage .image img {
+    width: 72%;
+    height: auto;
+  }
+  body .about-content {
+    width: 100%;
+    padding: 40px 4.2% 60px 4.2%;
+    box-sizing: border-box;
+  }
+  body .about-content .about-title {
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    line-height: 28px;
+    padding-bottom: 20px;
+  }
+  body .about-content ul {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  body .about-content ul li {
+    float: inherit;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  body .about-content ul li .intro {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+  body .about-content ul li .detail {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+  }
+  body .about-content ul li:last-child {
+    margin-right: auto;
+  }
+  body .about-content .about-ued {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 40px;
+  }
+  body .about-content .about-ued .ued-title {
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    line-height: 28px;
+  }
+  body .about-content .about-ued .ued-brief {
+    width: 85%;
+    height: auto;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+  body .about-content .about-ued .ustack-work {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  body .about-content .about-ued .ustack-logo {
+    width: 41.4%;
+    margin-right: 3%;
+    margin-bottom: 15px;
+  }
+  body .about-content .about-ued .ustack-record {
+    width: 55.6%;
+    margin-bottom: 15px;
+  }
+  body .about-content .about-ued .ustack-celebrate {
+    width: 65.4%;
+    margin-right: 3%;
+  }
+  body .about-content .about-ued .ustack-computer {
+    width: 31.6%;
+  }
+  body .nav-footer {
+    display: none;
+  }
+  body .mobile-footer {
+    display: block;
+    width: 100%;
+    padding: 0 7.2%;
+    box-sizing: border-box;
+    height: 111px;
+    background-image: linear-gradient(-179deg, #0E4563 0%, #042335 100%);
+  }
+  body .mobile-footer ul {
+    width: 350px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  body .mobile-footer ul li {
+    float: left;
+    padding: 0 5%;
+    display: inline-block;
+    border-right: 1px solid #ffffff;
+  }
+  body .mobile-footer ul li a {
+    display: inline-block;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 12px;
+    text-decoration: none;
+  }
+  body .mobile-footer ul li:last-child {
+    border-right: none;
+  }
+  body .mobile-footer .identification {
+    text-align: center;
+  }
+  body .mobile-footer .identification p {
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+  }
+  body .mobile-footer .identification .underline {
+    text-decoration: underline;
+    padding-left: 12px;
+  }
+  body .mobile-home-footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1240px) {
+  body .whole-page {
+    width: 960px;
+  }
+  body .about-content {
+    width: 960px;
+  }
+  body .about-content ul li {
+    width: 31%;
+  }
+  body .about-content ul li .detail {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body .about-content .about-ued .ustack-work {
+    width: 52.6%;
+  }
+  body .about-content .about-ued .ustack-logo {
+    width: 17.5%;
+  }
+  body .about-content .about-ued .ustack-record {
+    width: 24%;
+  }
+  body .about-content .about-ued .ustack-celebrate {
+    width: 28%;
+  }
+  body .about-content .about-ued .ustack-computer {
+    width: 13.5%;
+  }
+  body .home-content .show > .home-item > .item {
+    width: 100%;
+    height: 550px;
+  }
+  body .home-content .show > .home-item > .item .left img {
+    width: 480px;
+    height: 360px;
+  }
+  body .home-content .show > .home-item > .item .right .title {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  body .nav-footer .sitemap {
+    width: 960px;
+  }
+  body .nav-footer .sitemap .left {
+    width: 240px;
+  }
+  body .nav-footer .sitemap .right div:not(:first-child) {
+    margin-left: 70px;
+  }
+}
