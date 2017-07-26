@@ -1,10 +1,26 @@
 encoding: utf-8
 repository: unitedstack.github.io/halo
+name: Halo
+
 github: [metadata]
 defaults:
   - scope:
-      path: design
+      path: ''
+      type: posts
+    values: 
+      layout: default
+  - scope:
+      path: framework
       type: pages
     values:
-      layout: default
-
+      layout: framework
+  - scope:
+      path: started
+      type: pages
+    values:
+      layout: started
+  - scope:
+      path: develop
+      type: pages
+    values:
+      layout: develop

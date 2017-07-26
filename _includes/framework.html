@@ -1,0 +1,20 @@
+<div class="site-menu">
+  {% for section in site.data.nav_framework %}
+    <div class="site-menu-block">
+      <div class="site-menu-links">
+        {% for item in section.items %}
+          <ul {% if page.id == item.id %} {% endif %}>
+            <p class="slidebar-title">{{item.title}}</p>
+            {% for single in item.subitems %}
+              <li {% if page.id == single.id %} class="selected" {% endif %}>
+                <a href={{single.href}}>{{single.title}}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+            

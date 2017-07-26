@@ -1,0 +1,19 @@
+- items:
+    - id: introduction
+      title: 介绍
+      subitems:
+        - id: source
+          title: 起源
+          href: /framework/source.html
+        - id: idea
+          title: 理念
+          href: /framework/idea.html
+    - id: framework
+      title: 架构
+      subitems:
+        - id: system-framework
+          title: 系统架构
+          href: /framework/system-framework.html
+        - id: deploy-framework
+          title: 部署架构
+          href: /framework/deploy-framework.html

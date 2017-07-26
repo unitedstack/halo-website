@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HALO</title>
+  <link rel="stylesheet" href="/assets/css/index.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css" />
+</head>
+<body>
+<header class="nav-header">
+  <div class="inner-center">
+    <a href="/" class="halo-logo"><img src="/img/halo-logo.png"></a>
+    <ul class="breadcrumb">
+      <li class="item"><a href="/framework/system-framework.html">架构</a></li>
+      <li class="item"><a href="/started/started.html">快速开始</a></li>
+      <li class="item"><a href="/develop/font-develop.html">开发</a></li>
+      <li class="item"><a href="/about/about">关于</a></li>
+    </ul>
+    <p class="doc">文档中心</p>
+  </div>
+</header>
+
+<header class="nav-header-mobile">
+  <div class="inner-center-mobile">
+    <div class="header-left">
+        <a href="/" class="skip" ><img src="/img/halo-logo.png" class="logo"></a>
+        <div id="x-open" class="x-wrapper">
+          <div class="x-1"></div>
+          <div class="x-2"></div>
+        </div>
+    </div>
+    <ul id="header-center" class="header-center">
+      <li class="multi-dropdown">
+        <a href="javascript:void(0)" class="firsta">
+          架构
+          <i class="icon-arrow-down"><img src="/img/down.png"></i>
+        </a>
+        <div class="dropdown-wrapper">
+          <ul class="dropdown">
+            <li class="multi select">
+              <a href="javascript:void(0)">
+                介绍
+                <i class="icon-arrow-down"><img src="/img/down.png"></i></i>
+              </a>
+              <ul class="child-dropdown">
+                <li><a href="/framework/source">起源</a></li>
+                <li><a href="/framework/idea">理念</a></li>
+              </ul>
+            </li>
+            <li class="multi">
+              <a href="javascript:void(0)">
+                架构
+                <i class="icon-arrow-down"><img src="/img/down.png"></i></i>
+              </a>
+              <ul class="child-dropdown">
+                <li><a href="/framework/system-framework">系统架构</a></li>
+                <li><a href="/framework/deploy-framework">部署架构</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)" class="firsta">
+          快速开始
+          <i class="icon-arrow-down"><img src="/img/down.png"></i></i>
+        </a>
+        <div class="dropdown-wrapper">
+          <ul class="dropdown">
+            <li><a href="/started/started">快速开始</a></li>
+            <li><a href="/started/deployment">服务器端部署</a></li>
+            <li><a href="/started/scripts">更多命令</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="multi-dropdown">
+        <a href="javascript:void(0)" class="firsta">开发
+        <i class="icon-arrow-down"><img src="/img/down.png"></i></i></a>
+        <div class="dropdown-wrapper">
+          <ul class="dropdown">
+            <li class="multi select">
+              <a href="javascript:void(0)">
+                配置<i class="icon-arrow-down"><img src="/img/down.png"></i></i>
+              </a>
+              <ul class="child-dropdown">
+                <li><a href="/develop/config">环境配置</a></li>
+                <li><a href="/develop/mirana">消息推送配置</a></li>
+                <li><a href="/develop/menu">菜单配置</a></li>
+                <li><a href="/develop/model">应用配置</a></li>
+                <li><a href="/develop/popup">弹窗配置</a></li>
+              </ul>
+            </li>
+            <li class="multi">
+              <a href="javascript:void(0)">开发<i class="icon-arrow-down"><img src="/img/down.png"></i></i></a>
+              <ul class="child-dropdown">
+                <li><a href="/develop/font-develop">前端开发</a></li>
+                <li><a href="/develop/after-develop">后端开发</a></li>
+              </ul>
+            </li>
+            <li class="multi">
+              <a href="javascript:void(0)">附录</a>
+              <ul class="child-dropdown">
+                <li><a href="/develop/learning-materials">研发学习资料</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <a href="javascript:void(0)" class="firsta">
+          关于
+          <i class="icon-arrow-down"><img src="/img/down.png"></i></i>
+        </a>
+        <div class="dropdown-wrapper">
+          <ul class="dropdown">
+            <li><a href="/about/about">关于我们</a></li>
+            <li><a href="https://www.ustack.com/">有云官网</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <p class="mobile-doc">文档中心</p>
+</header>
+<div class="whole-page">
+  <div class="site-page-slidebar">
+    <div class="site-menu">
+  
+    <div class="site-menu-block">
+      <div class="site-menu-links">
+        
+          <ul >
+            <p class="slidebar-title">快速开始</p>
+            
+              <li >
+                <a href=/started/started.html>快速开始</a>
+              </li>
+            
+              <li >
+                <a href=/started/deployment.html>服务器端部署</a>
+              </li>
+            
+              <li >
+                <a href=/started/scripts.html>更多命令</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+</div>
+    <div class="site-content">
+      <h2 id="快速开始">快速开始</h2>
+
+<p>管理平台分为两大项目，kunkka和mirana。kunkka主要负责视窗、交互和逻辑部分，mirana则负责后端的消息推送。当两个项目正确的安装时用户可以使用完整的UOS平台服务。以下介绍kunkka和mirana的本地运行方法。服务器端部署请参考<a href="/started/deployment.html">服务器端部署</a>。</p>
+
+<h2 id="环境检测">环境检测</h2>
+
+<p>安装HALO之前，对本地或服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来Kunkka和Mirana的安装。</p>
+
+<ul>
+  <li>检测是否安装<code class="highlighter-rouge">NodeJS</code>，并且是v5或v6版本。若没有，先安装<code class="highlighter-rouge">nvm</code>，通过<code class="highlighter-rouge">nvm</code>安装v5或v6的版本的<code class="highlighter-rouge">NodeJS</code>，若有<code class="highlighter-rouge">NodeJS</code>但版本不对，请用<code class="highlighter-rouge">nvm use 5</code>切换到v5环境中</li>
+  <li>检测是否安装<code class="highlighter-rouge">pm2</code>，若没有，请用<code class="highlighter-rouge">npm install -g pm2</code>全局安装<code class="highlighter-rouge">pm2</code></li>
+  <li>检测后端配置文件中<code class="highlighter-rouge">memcached</code>及<code class="highlighter-rouge">mysql</code>服务是否正常</li>
+  <li>检测后端配置文件中OpenStack的<code class="highlighter-rouge">Keystone</code>及admin_user、admin_password、admin_projectId是否可用</li>
+</ul>
+
+<h2 id="kunkka">Kunkka</h2>
+
+<h4 id="1-下载">1. 下载</h4>
+
+<p>从远程代码库里下载项目 <code class="highlighter-rouge">git clone git@gitlab.ustack.com:ued/kunkka.git</code></p>
+
+<h4 id="2-安装">2. 安装</h4>
+
+<ul>
+  <li>远程代码复制到本地后，在kunkka的目录中跑<code class="highlighter-rouge">./init.sh</code>。该命令运行以下的操作，可能需要较长的时间</li>
+  <li>下载halo子模块</li>
+  <li>下载uskin子模块</li>
+  <li>下载前端和后端的所有子项目（dashboard, admin, slardar等），并且添加eslint pre-commit hook</li>
+  <li>安装子模块中的dependencies</li>
+  <li>运行<code class="highlighter-rouge">npm run build</code></li>
+</ul>
+
+<h4 id="3-修改配置">3. 修改配置</h4>
+
+<ul>
+  <li>进入<code class="highlighter-rouge">kunkka/halo/config.json</code>根据自己的环境修改配置项</li>
+</ul>
+
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"sessionEngine"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Memcached"</span><span class="p">,</span><span class="w">         </span><span class="err">//</span><span class="w"> </span><span class="err">缓存服务器，默认是memcahced，保持不变</span><span class="w">
+    </span><span class="nt">"remotes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                 </span><span class="err">//</span><span class="w"> </span><span class="err">Memcached缓存服务器地址，数组，可以存放多个地址（我们的架构是三个memcached</span><span class="w"> </span><span class="err">服务节点）</span><span class="w">
+      </span><span class="s2">"PREFIX.47:11211"</span><span class="p">,</span><span class="w">         </span><span class="err">//</span><span class="w"> </span><span class="err">请把PREFIX替换为网段地址</span><span class="w">
+      </span><span class="s2">"PREFIX.48:11211"</span><span class="p">,</span><span class="w">         </span><span class="err">//</span><span class="w"> </span><span class="err">请把PREFIX替换为网段地址</span><span class="w">
+      </span><span class="s2">"PREFIX.49:11211"</span><span class="w">          </span><span class="err">//</span><span class="w"> </span><span class="err">请把PREFIX替换为网段地址</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"secret"</span><span class="p">:</span><span class="w"> </span><span class="s2">"keyboard cat"</span><span class="p">,</span><span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">值可以随机,</span><span class="w"> </span><span class="err">不影响</span><span class="w">
+    </span><span class="nt">"cookie_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ustack"</span><span class="w">      </span><span class="err">//</span><span class="w"> </span><span class="err">值可以随机</span><span class="p">,</span><span class="w"> </span><span class="err">不影响</span><span class="w">
+  </span><span class="err">}</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"cookie"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"maxAge"</span><span class="p">:</span><span class="w"> </span><span class="mi">604800000</span><span class="w">          </span><span class="err">//</span><span class="w"> </span><span class="err">cookie</span><span class="w"> </span><span class="err">过期时间</span><span class="p">,</span><span class="w"> </span><span class="err">默认是一周，保持不变</span><span class="w">
+  </span><span class="err">}</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"log"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"accessLogPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/var/log/kunkka/access.log"</span><span class="p">,</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">访问日志文件路径，请配成</span><span class="w"> </span><span class="err">/var/log/kunkka/access.log</span><span class="w">
+    </span><span class="nt">"errorLogPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/var/log/kunkka/error.log"</span><span class="p">,</span><span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">错误日志文件路径,</span><span class="w"> </span><span class="err">请配成</span><span class="w"> </span><span class="err">/var/log/kunkka/error.log</span><span class="w">
+    </span><span class="nt">"debug"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">                                   </span><span class="err">//</span><span class="w"> </span><span class="err">生产环境为false，保持默认</span><span class="w">
+    </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"combined"</span><span class="p">,</span><span class="w">                            </span><span class="err">//</span><span class="w">  </span><span class="err">默认为combined，保持默认</span><span class="w">
+    </span><span class="nt">"printAccessLog"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">                          </span><span class="err">//</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="err">为打印日志，</span><span class="w"> </span><span class="err">保持默认</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"websocket"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">":5679"</span><span class="w">                                </span><span class="err">//</span><span class="w"> </span><span class="err">websocket</span><span class="w"> </span><span class="err">服务地址，保持默认</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"region"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                                    </span><span class="err">//</span><span class="w"> </span><span class="err">region</span><span class="w"> </span><span class="err">信息，</span><span class="w"> </span><span class="err">需根据环境的region信息配置</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"regionOne"</span><span class="p">,</span><span class="w">           </span><span class="err">//</span><span class="w"> </span><span class="err">region</span><span class="w"> </span><span class="err">的英文名</span><span class="w">
+        </span><span class="nt">"zh-CN"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一区"</span><span class="w">              </span><span class="err">//</span><span class="w"> </span><span class="err">region</span><span class="w"> </span><span class="err">的中文名</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"regionOne"</span><span class="w">             </span><span class="err">//</span><span class="w"> </span><span class="err">region</span><span class="w"> </span><span class="err">的ID</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span><span class="w">                  </span><span class="err">//</span><span class="w"> </span><span class="err">默认default，</span><span class="w"> </span><span class="err">keystone</span><span class="w"> </span><span class="err">domian信息</span><span class="w">
+  </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">5678</span><span class="p">,</span><span class="w">                         </span><span class="err">//</span><span class="w"> </span><span class="err">kunkka的服务端口，默认5678</span><span class="w"> </span><span class="err">保持不变</span><span class="w">
+  </span><span class="nt">"mysql"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">                           </span><span class="err">//</span><span class="w"> </span><span class="err">mysql</span><span class="w"> </span><span class="err">配置</span><span class="w">
+    </span><span class="nt">"host"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lb.XXX.XXX.ustck.in"</span><span class="p">,</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">mysql</span><span class="w"> </span><span class="err">服务地址,</span><span class="w"> </span><span class="err">格式为：</span><span class="w"> </span><span class="err">lb.XXX.XXX.ustck.in</span><span class="w">
+    </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">3306</span><span class="p">,</span><span class="w">                         </span><span class="err">//mysql</span><span class="w"> </span><span class="err">端口号</span><span class="w">
+    </span><span class="nt">"user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"root"</span><span class="p">,</span><span class="w">                    </span><span class="err">//</span><span class="w"> </span><span class="err">mysql</span><span class="w"> </span><span class="err">用户名</span><span class="w">
+    </span><span class="nt">"password"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234"</span><span class="p">,</span><span class="w">                </span><span class="err">//</span><span class="w"> </span><span class="err">mysql</span><span class="w"> </span><span class="err">密码</span><span class="w">
+    </span><span class="nt">"database"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kunkka"</span><span class="p">,</span><span class="w">         </span><span class="err">//</span><span class="w"> </span><span class="err">保持默认</span><span class="w"> </span><span class="err">kunkka</span><span class="w">
+    </span><span class="nt">"table"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tusk"</span><span class="w">                  </span><span class="err">//</span><span class="w">  </span><span class="err">保持默认</span><span class="w"> </span><span class="err">tusk</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"reg_token_expire"</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span><span class="w">      </span><span class="err">//注册邮件token过期日期</span><span class="w">
+  </span><span class="nt">"reg_sms_expire"</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span><span class="w">          </span><span class="err">//注册短信验证码过期日期</span><span class="w">
+  </span><span class="nt">"phone_area_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"86"</span><span class="p">,</span><span class="w">        </span><span class="err">//手机号默认区号</span><span class="w">
+  </span><span class="nt">"ticket_flow"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">                </span><span class="err">//工单处理流程角色按顺序由低到高</span><span class="w">
+    </span><span class="s2">"member"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"owner"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"admin"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"ticket_attachment_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/opt/attachment/nfs"</span><span class="p">,</span><span class="w"> </span><span class="err">//工单附件保存路径</span><span class="w">
+  </span><span class="nt">"ticket_attachment_size_limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">10485760</span><span class="p">,</span><span class="w">        </span><span class="err">//工单附件大小限制</span><span class="w">
+  </span><span class="nt">"approval_flow"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">   </span><span class="err">//审批流程</span><span class="w"> </span><span class="err">角色按顺序由低到高</span><span class="w">
+    </span><span class="s2">"Member"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"owner"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"admin"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">//支付系统，币种</span><span class="w">
+    </span><span class="nt">"ISO4217"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CNY"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"人民币"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"元"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"paypal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="err">//PayPal账户配置</span><span class="w">
+    </span><span class="nt">"mode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"live"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"client_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"client_secret"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"alipay"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">//支付宝配置</span><span class="w">
+    </span><span class="err">/**</span><span class="w">
+     </span><span class="err">*</span><span class="w"> </span><span class="err">service</span><span class="w">
+     </span><span class="err">*</span><span class="w"> </span><span class="err">国内账户:create_direct_pay_by_user</span><span class="w">
+     </span><span class="err">*</span><span class="w"> </span><span class="err">国外账户:create_forex_trade</span><span class="w">
+     </span><span class="err">*/</span><span class="w">
+    </span><span class="nt">"service"</span><span class="p">:</span><span class="w"> </span><span class="s2">"create_direct_pay_by_user"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"partner"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="err">//合作身份者id，以2088开头的16位纯数字</span><span class="w">
+    </span><span class="nt">"partnerKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="err">//安全检验码，以数字和字母组成的32位字符</span><span class="w">
+    </span><span class="err">/**</span><span class="w">
+     </span><span class="err">*</span><span class="w"> </span><span class="err">seller_id,seller_email,seller_account_name三个参数至少必须传递一个(国内账户,国外无要求)。</span><span class="w">
+     </span><span class="err">*</span><span class="w"> </span><span class="err">当签约账号就是收款账号时，请务必使用参数seller_id，即seller_id的值与partner的值相同。</span><span class="w">
+     </span><span class="err">*</span><span class="w"> </span><span class="err">三个参数的优先级别是：seller_id&gt;seller_account_name&gt;seller_email</span><span class="w">
+    </span><span class="err">*/</span><span class="w">
+    </span><span class="nt">"seller_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"seller_account_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"seller_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"subject"</span><span class="p">:</span><span class="w"> </span><span class="s2">"账户充值/Recharge:"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"金额/Amount:"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"_input_charset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"utf-8"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"payment_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"gateway"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://mapi.alipay.com/gateway.do?"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"keystone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lb.XXX.XXX.ustck.in:5000"</span><span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">openstack</span><span class="w"> </span><span class="err">keystone</span><span class="w"> </span><span class="err">服务地址</span><span class="p">,</span><span class="w"> </span><span class="err">需要手动填写，格式为：lb.XXX.XXX.ustck.in</span><span class="p">:</span><span class="err">端口号。</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<h4 id="4-运行">4. 运行</h4>
+
+<p>安装和修改配置完成后，通过以下操作查看项目是否正常运行</p>
+
+<ul>
+  <li>进入 <code class="highlighter-rouge">cd halo</code></li>
+  <li>开启后端 <code class="highlighter-rouge">npm start</code></li>
+  <li>访问 <code class="highlighter-rouge">localhost:5678</code> 查看是否正常运行</li>
+</ul>
+
+<h2 id="mirana">Mirana</h2>
+
+<h4 id="1-下载-1">1. 下载</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@gitlab.ustack.com:ued/mirana.git
+</code></pre>
+</div>
+
+<h4 id="2-安装-1">2. 安装</h4>
+
+<p>安装依赖模块。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install
+</code></pre>
+</div>
+
+<h4 id="3-修改配置-1">3. 修改配置</h4>
+
+<p>复制配置文件，根据需求修改config.json文件</p>
+
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"mq"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"remotes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"42.62.101.195"</span><span class="p">],</span><span class="w"> </span><span class="err">//rabbitMQ的host地址，数组，</span><span class="w">
+    </span><span class="nt">"heartbeat"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w"> </span><span class="err">//连接周期，单位：秒。</span><span class="w">
+    </span><span class="nt">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"openstack"</span><span class="p">,</span><span class="w"> </span><span class="err">//rabbitMQ的账户名</span><span class="w">
+    </span><span class="nt">"password"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4260ea44d3c55ac74c3241db"</span><span class="p">,</span><span class="err">//rabbitMQ的账户密码</span><span class="w">
+    </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">5672</span><span class="p">,</span><span class="w"> </span><span class="err">//rabbitMQ的端口</span><span class="w">
+    </span><span class="nt">"sourceExchanges"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"nova"</span><span class="p">,</span><span class="w"> </span><span class="s2">"neutron"</span><span class="p">,</span><span class="w"> </span><span class="s2">"cinder"</span><span class="p">,</span><span class="w"> </span><span class="s2">"glance"</span><span class="p">],</span><span class="w"> </span><span class="err">//配置有哪些channel</span><span class="w">
+    </span><span class="nt">"reconnectTimeout"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="err">//在连接失败的时候，隔多长时间重新连接，单位：毫秒</span><span class="w">
+    </span><span class="nt">"maxTimeoutLimit"</span><span class="p">:</span><span class="w"> </span><span class="mi">120000</span><span class="p">,</span><span class="w"> </span><span class="err">//最大尝试时间，单位：毫秒</span><span class="w">
+    </span><span class="nt">"exchangeDurable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="err">//exchange持久化</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"websocket"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">5679</span><span class="p">,</span><span class="w">  </span><span class="err">//监听端口号</span><span class="w">
+    </span><span class="nt">"host"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.0.0"</span><span class="w"> </span><span class="err">//绑定IP</span><span class="p">,</span><span class="err">0.0.0.0为不限IP。</span><span class="w">
+  </span><span class="err">}</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"log"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"errorLog"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/var/log/mirana/error.log"</span><span class="w"> </span><span class="err">//错误日志存放路径</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<h4 id="4-运行-1">4. 运行</h4>
+
+<p>运行之后，通过界面操作查看是否有后端消息推送。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm start
+</code></pre>
+</div>
+
+      <div class="docs-prevnext">
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="nav-footer">
+  <section class="sitemap">
+  <div class="left">
+    <a href="https://www.ustack.com" class="skip" ><img src="/img/footer-ustack-logo.png" class="ustack-logo"></a>
+    <a href="/" class="skip" ><img src="/img/footer-halo-logo.png" class="halo-logo"></a>
+    <p class="copyright">Copyright © 2017</p>
+    <p class="underline">MIT License</p>
+  </div>
+  <div class="right">
+    <div>
+      <h5>架构</h5>
+      <a href="/framework/source.html">起源</a>
+      <a href="/framework/idea.html">理念</a>
+      <a href="/framework/system-framework.html">系统架构</a>
+      <a href="/framework/deploy-framework.html">部署架构</a>
+    </div>
+    <div>
+      <h5>快速开始</h5>
+      <a href="/started/started.html">快速开始</a>
+      <a href="started/deployment.md">服务器端部署</a>
+      <a href="/started/scripts.html">更多命令</a>
+    </div>
+    <div>
+      <h5>配置</h5>
+      <a href="/develop/config.html">环境配置</a>
+      <a href="/develop/mirana.html">消息推送配置</a>
+      <a href="/develop/menu.html">菜单配置</a>
+      <a href="/develop/model.html">应用配置</a>
+      <a href="/develop/popup.html">弹窗配置</a>
+    </div>
+    <div>
+      <h5>开发</h5>
+      <a href="/develop/font-develop.html">前端开发</a>
+      <a href="/develop/after-develop.html">后端开发</a>
+      <a href="/develop/learning-materials.html">研发学习资料</a>
+    </div>
+    <div>
+      <h5>公司</h5>
+      <a href="/react/blog/"></a>
+      <a href="/about/about">关于我们</a>
+      <a href="https://www.ustack.com/">有云官网</a>
+    </div>
+  </div>
+  </section>
+</footer>
+
+<footer class="mobile-footer">
+  <ul>
+    <li><a href="/framework/system-framework.html">架构</a></li>
+    <li><a href="/started/started.html">快速开始</a></li>
+    <li><a href="/develop/font-develop.html">开发</a></li>
+    <li><a href="/about/about">关于</a></li>
+    <li><a href="https://www.ustack.com/">有云官网</a></li>
+  </ul>
+  <div class="identification">
+    <p class="copyright">Copyright © 2017</p>
+    <p class="underline">MIT License</p>   
+  </div>
+</footer>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/js/control.js"></script>
+
+</body>
+</html>
