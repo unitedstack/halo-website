@@ -1,5 +1,5 @@
 ## 系统架构
-<img src="/img/framework/project_architecture.png" style="width: 100%">
+<img src="img/framework/project_architecture.png" style="width: 100%">
 
 kunkka 是一个拼装项目，用来拼装各个子项目到 kunkka 当中组成 OpenStack dashboard 项目，项目的配置在 kunkka/config.json 文件里面。 kunkka 当中的核心项目是halo，是一个 web 项目框架，主要包含 Client 端和 Server 端。
 
