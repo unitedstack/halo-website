@@ -6,6 +6,7 @@
   <title>HALO</title>
   <link rel="stylesheet" href="../assets/css/index.css" type="text/css" />
   <link rel="stylesheet" href="../assets/css/syntax.css" type="text/css" />
+  <link href="../img/favicon.ico" mce_href="../img/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
 {% include header.html %}
@@ -16,10 +17,10 @@
       {{content}}
       <div class="docs-prevnext">
         {% if page.prev %}
-          <a class="docs-prev" href="/framework/{{ page.prev }}">&larr; Prev</a>
+          <a class="docs-prev" href="/framework/{{ page.prev }}"><span></span> {{page.prevname}}</a>
         {% endif %}
         {% if page.next %}
-          <a class="docs-next" href="/framework/{{ page.next }}">Next &rarr;</a>
+          <a class="docs-next" href="/framework/{{ page.next }}">{{page.nextname}} <span></span></a>
         {% endif %}
      </div>
     </div>

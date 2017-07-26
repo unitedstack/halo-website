@@ -1,10 +1,16 @@
+---
+prev: config.html
+next: menu.html
+prevname: 环境配置
+nextname: 菜单配置
+---
 ## Mirana配置
 
 mirana 是dashboard的消息转发系统。
 
 它后端连接openstack的消息服务，当浏览器访问时与之建立websocket连接。每当后台有消息产生时，推送到浏览器。
 
-mirana配置文件
+#### mirana配置文件
 
 ``` json
 {
@@ -29,7 +35,7 @@ mirana配置文件
 }
 ```
 
-mirana安装文档
+#### mirana安装文档
 
 ``` javascript
 # 依赖：node v5+

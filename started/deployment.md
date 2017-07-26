@@ -1,3 +1,9 @@
+---
+prev: started.html
+next: scripts.html
+prevname: 快速开始
+nextname: 更多命令
+---
 ## 服务器端部署
 
 对于已配置好的openstack后端环境，可通过部署`kunkka`并修改配置进行网页访问。以下介绍两种部署方法。注意，安装HALO之前，请先对服务器进行的环境检测，如需在本地运行，请参考[快速开始](/started/started.html)。

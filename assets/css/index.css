@@ -1,4 +1,8 @@
 @import "reset.css";
+html,
+body {
+  height: 100%;
+}
 body {
   font-size: 15px;
   margin: 0;
@@ -35,6 +39,9 @@ body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-link
   color: #666666;
 }
 body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul li a:hover {
+  color: #42B9E5;
+}
+body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul li a.active {
   color: #42B9E5;
 }
 body .whole-page .site-page-slidebar .site-menu .site-menu-block .site-menu-links ul li:last-child {
@@ -102,8 +109,33 @@ body .whole-page .site-content .highlighter-rouge {
   overflow: auto;
 }
 body .whole-page .docs-prevnext {
+  display: none;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+body .whole-page .docs-prevnext .docs-prev {
+  float: left;
+}
+body .whole-page .docs-prevnext .docs-prev span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: #42B9E5;
+  background: url(../../img/prev.png) no-repeat center center;
+  position: relative;
+  top: 2px;
+}
+body .whole-page .docs-prevnext .docs-next {
+  float: right;
+}
+body .whole-page .docs-prevnext .docs-next span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: #42B9E5;
+  background: url(../../img/next.png) no-repeat center center;
+  position: relative;
+  top: 2px;
 }
 body .nav-footer {
   width: 100%;
@@ -430,6 +462,9 @@ body .about-content .about-ued .ustack-celebrate {
   }
   body .whole-page .site-page-slidebar .site-content img {
     width: 100% !important;
+  }
+  body .whole-page .site-page-slidebar .docs-prevnext {
+    display: block;
   }
   body .home-content .show .home-item {
     width: 100%;

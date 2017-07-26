@@ -1,3 +1,9 @@
+---
+prev: mirana.html
+next: model.html
+prevname: Mirana配置
+nextname: 应用配置
+---
 ## 菜单配置
 
 菜单配置文件为左侧二级导航的配置文件。

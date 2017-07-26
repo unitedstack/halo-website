@@ -1,3 +1,7 @@
+---
+next: idea.html
+nextname : 理念
+---
 ## 起源
 
 自OpenStack社区成立以来，Horizon一直是OpenStack默认的用户界面（UserInterface）。Horizon作为OpenStack最为重要的项目之一，承担了普通用户、管理员等等不同角色的使用者的操作入口。

@@ -1,6 +1,8 @@
-prev: installation.html
-next: introducing-jsx.html
-## 部署
+---
+prev: system-framework.html
+prevname: 系统架构
+---
+## 部署架构
 
 Kunkka 部署在OpenStack 集群的 API （web服务器）节点，其部署架构如下图所示：
 <p style="text-align: center">

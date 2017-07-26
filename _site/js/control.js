@@ -1,6 +1,7 @@
 // header mobile
 $('.x-wrapper').click(function() {
   $('.nav-header-mobile').toggleClass('open');
+  $('body').css('overflow','hidden')
   if($('.nav-header-mobile').hasClass('open')){
     $('.introduction').css('display','none');   
   } else {

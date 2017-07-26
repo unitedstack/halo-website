@@ -1,3 +1,9 @@
+---
+prev: source.html
+next: deploy-framework.html
+prevname: 起源
+nextname: 系统架构
+---
 ## 理念
 
 HALO是一种SPA(Single Page Applciation)页面，其意味着加载单个HTML 页面并在用户与应用程序交互时动态更新该页面的Web应用程序。考虑到实现时，HALO存在着以下潜在的问题。

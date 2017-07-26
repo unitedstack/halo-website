@@ -1,3 +1,9 @@
+---
+prev: menu.html
+next: popup.html
+prevname: 菜单配置
+nextname: 弹窗配置
+---
 ## 应用配置
 
 应用配置文件为每个应用的界面布局的配置文件。

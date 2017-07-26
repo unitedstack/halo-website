@@ -1,3 +1,7 @@
+---
+next: mirana.html
+nextname: Mirana配置
+---
 ## 环境配置
 
 对于OpenStack后端对接的配置文件在`kunkka/halo/configs/server.json`。通过修改Keystone、MySQL、Memchaed等地址进行后端对接。

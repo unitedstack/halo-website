@@ -14,7 +14,9 @@
 @mobile-banner-second-bg: rgba(64,95,114,0.25);
 @mobile-banner-third-bg: rgba(64,95,114,0.15);
 @mobile-banner:#010413;
-
+html,body{
+  height: 100%;
+}
 body {
   font-size: 15px;
   margin: 0;
@@ -46,6 +48,9 @@ body {
                   text-decoration: none;
                   color: @slidebar_color;
                   &:hover {
+                    color: @slidebar_blue;
+                  }
+                  &.active {
                     color: @slidebar_blue;
                   }
                 }
@@ -120,8 +125,33 @@ body {
       }
     }
     .docs-prevnext {
+      display: none;
       padding-top: 40px;
       padding-bottom: 40px;
+      .docs-prev {
+        float: left;
+        span {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          color: @slidebar_blue;
+          background: url(../../img/prev.png) no-repeat center center;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .docs-next {
+        float: right;
+        span {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          color: @slidebar_blue;
+          background: url(../../img/next.png) no-repeat center center;
+          position: relative;
+          top: 2px;
+        }
+      }
     }
   }
   .nav-footer {
@@ -461,6 +491,9 @@ body {
           img {
             width: 100% !important;
           }
+        }
+        .docs-prevnext {
+          display: block;
         }
       }
     }

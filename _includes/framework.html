@@ -7,7 +7,7 @@
             <p class="slidebar-title">{{item.title}}</p>
             {% for single in item.subitems %}
               <li {% if page.id == single.id %} class="selected" {% endif %}>
-                <a href={{single.href}}>{{single.title}}</a>
+                <a href={{single.href}} {% if page.title == single.title %} class="active" {% endif %}>{{single.title}}</a>
               </li>
             {% endfor %}
           </ul>

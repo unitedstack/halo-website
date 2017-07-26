@@ -1,4 +1,8 @@
-## 其他命令
+---
+prev: deployment.html
+prevname: 服务器端部署
+---
+## 更多命令
 
 以下操作均在 `halo` 目录中运行，注意不是 `kunkka` 目录
 

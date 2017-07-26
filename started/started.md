@@ -1,3 +1,7 @@
+---
+next: deployment.html
+nextname: 服务器端部署
+---
 ## 快速开始
 
 管理平台分为两大项目，kunkka和mirana。kunkka主要负责视窗、交互和逻辑部分，mirana则负责后端的消息推送。当两个项目正确的安装时用户可以使用完整的UOS平台服务。以下介绍kunkka和mirana的本地运行方法。服务器端部署请参考[服务器端部署](/started/deployment.html)。

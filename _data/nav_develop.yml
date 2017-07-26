@@ -5,8 +5,8 @@
         - id: config
           title: 环境配置
           href: ../develop/config.html
-        - id: mirana
-          title: 消息推送配置
+        - id: miranas
+          title: Mirana配置
           href: ../develop/mirana.html
         - id: menu
           title: 菜单配置
