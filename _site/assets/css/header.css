@@ -153,6 +153,36 @@ body .nav-footer {
   color: #ffffff;
   padding-top: 61px;
 }
+body .nav-footer .totop {
+  opacity: 0;
+  transition: all 0.2s;
+  position: fixed;
+  z-index: 9999;
+  right: 30px;
+  bottom: 30px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #f1f5f8;
+  line-height: 65px;
+  text-align: center;
+  border-radius: 2px;
+}
+body .nav-footer .totop .icon-arrow-up {
+  font-size: 30px;
+  color: #797b8b;
+}
+body .nav-footer .totop .icon-arrow-up img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .nav-footer .totop:hover {
+  background-color: #2b363a;
+}
 body .nav-footer .sitemap {
   width: 1160px;
   margin: 0 auto;

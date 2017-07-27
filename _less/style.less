@@ -15,6 +15,8 @@
 @mobile-banner-third-bg: rgba(64,95,114,0.15);
 @mobile-banner:#010413;
 @background-color: #0a3047;
+@totop-bgcolor: #f1f5f8;
+@totop-bgcolorhover: #2b363a;
 html,body{
   height: 100%;
 }
@@ -171,6 +173,35 @@ body {
     background: linear-gradient(#0E4563,#042335);
     color: @white-color;
     padding-top: 61px;
+    .totop {
+      opacity: 0;
+      transition: all 0.2s;
+      position: fixed;
+      z-index: 9999;
+      right: 30px;
+      bottom: 30px;
+      width: 65px;
+      height: 65px;
+      cursor: pointer;
+      background-color: @totop-bgcolor;
+      line-height: 65px;
+      text-align: center;
+      border-radius: 2px;
+      .icon-arrow-up {
+        font-size: 30px;
+        img {
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+      &:hover {
+        background-color: @totop-bgcolorhover;
+      }
+    }
     .sitemap {
       width: 1160px;
       margin: 0 auto;
