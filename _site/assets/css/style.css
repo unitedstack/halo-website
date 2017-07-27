@@ -51,11 +51,11 @@ body .whole-page .site-content {
   float: left;
 }
 body .whole-page .site-content h2 {
+  height: 70px;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 70px;
   color: #333333;
   letter-spacing: 2.6px;
-  padding-bottom: 30px;
   font-weight: bold;
 }
 body .whole-page .site-content p {
@@ -95,17 +95,21 @@ body .whole-page .site-content a {
   color: #42B9E5;
 }
 body .whole-page .site-content h4 {
+  height: 40px;
   font-size: 18px;
+  line-height: 40px;
   color: #333333;
   letter-spacing: 1px;
-  padding-bottom: 20px;
   font-weight: bold;
 }
 body .whole-page .site-content .highlighter-rouge {
   margin-bottom: 20px;
   background: #F9FBFB;
+  color: #5B7E8B;
   border-radius: 2px;
   overflow: auto;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 body .whole-page .docs-prevnext {
   display: none;

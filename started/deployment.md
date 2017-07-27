@@ -151,8 +151,8 @@ nextname: 更多命令
 ###### 1. 下载`kunkka`和`mirana`
 
 ```
-git clone git@gitlab.ustack.com:ued/kunkka.git
-git clone git@gitlab.ustack.com:ued/mirana.git
+$ git clone git@gitlab.ustack.com:ued/kunkka.git
+$ git clone git@gitlab.ustack.com:ued/mirana.git
 ```
 ###### 2. 复制`kunkka`和`mirana`到服务器的任意目录中
 ###### 3. 进入`kunkka`，运行`./init.sh`

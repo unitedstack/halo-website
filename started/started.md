@@ -143,7 +143,7 @@ nextname: 服务器端部署
 #### 1. 下载
 
 ```
-git clone git@gitlab.ustack.com:ued/mirana.git
+$ git clone git@gitlab.ustack.com:ued/mirana.git
 ```
 
 #### 2. 安装
@@ -151,7 +151,7 @@ git clone git@gitlab.ustack.com:ued/mirana.git
 安装依赖模块。
 
 ```
-npm install
+$ npm install
 ```
 
 #### 3. 修改配置
@@ -186,5 +186,5 @@ npm install
 运行之后，通过界面操作查看是否有后端消息推送。
 
 ```
-npm start
+$ npm start
 ```

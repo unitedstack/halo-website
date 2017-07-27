@@ -1,0 +1,11 @@
+<div class="doc">
+  {% for list in site.data.nav_doc %}
+    <div class="specific">
+      {% for item in list.items %}
+      <div {% if page.id == item.id %} {% endif %}>
+        <p class="doc-specific">{{item.title}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

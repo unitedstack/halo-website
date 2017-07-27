@@ -13,12 +13,11 @@
   <div class="inner-center">
     <a href="../" class="halo-logo"><img src="../img/halo-logo.png"></a>
     <ul class="breadcrumb">
-      <li class="item"><a href="../framework/system-framework.html">架构</a></li>
+      <li class="item"><a href="../framework/source.html">架构</a></li>
       <li class="item"><a href="../started/started.html">快速开始</a></li>
-      <li class="item"><a href="../develop/font-develop.html">开发</a></li>
+      <li class="item"><a href="../develop/config.html">开发</a></li>
       <li class="item"><a href="../about/about.html">关于</a></li>
     </ul>
-    <p class="doc">文档中心</p>
   </div>
 </header>
 
@@ -125,8 +124,8 @@
       </li>
     </ul>
   </div>
-  <p class="mobile-doc">文档中心</p>
 </header>
+<div class="nav-header-doc"><div class="inner-center"><p class="doc">快速开始</p></div></div>
 <div class="whole-page">
   <div class="site-page-slidebar">
     <div class="site-menu">
@@ -164,19 +163,19 @@
 
 <h6 id="1-手动安装子模块">1. 手动安装子模块</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git clone git@git.ustack.com:ustack/halo.git --recursive
+<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone git@git.ustack.com:ustack/halo.git --recursive
 </code></pre>
 </div>
 
 <h6 id="2-安装依赖包">2. 安装依赖包</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm install
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install
 </code></pre>
 </div>
 
 <h6 id="3-安装pm2">3. 安装pm2</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo npm install pm2 -g
+<div class="highlighter-rouge"><pre class="highlight"><code>$ sudo npm install pm2 -g
 </code></pre>
 </div>
 
@@ -184,7 +183,7 @@
 
 <h6 id="1-手动添加eslint">1. 手动添加eslint</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./scripts/csc.sh
+<div class="highlighter-rouge"><pre class="highlight"><code>$ ./scripts/csc.sh
 </code></pre>
 </div>
 
@@ -192,52 +191,52 @@
 
 <h6 id="1-启动后端服务器每次dev或build时需要运行">1. 启动后端服务器（每次dev或build时需要运行）</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm start
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm start
 </code></pre>
 </div>
 
 <h6 id="2-重启后端服务器每次dev或build时需要运行">2. 重启后端服务器（每次dev或build时需要运行）</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm restart
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm restart
 </code></pre>
 </div>
 
 <h6 id="3-dev模式默认语言默认watch所有项目">3. dev模式（默认语言，默认watch所有项目）</h6>
 
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="err">npm</span><span class="w"> </span><span class="err">run</span><span class="w"> </span><span class="err">dev</span><span class="w">
-</span><span class="err">npm</span><span class="w"> </span><span class="err">start</span><span class="w">
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="err">$</span><span class="w"> </span><span class="err">npm</span><span class="w"> </span><span class="err">run</span><span class="w"> </span><span class="err">dev</span><span class="w">
+</span><span class="err">$</span><span class="w"> </span><span class="err">npm</span><span class="w"> </span><span class="err">start</span><span class="w">
 </span></code></pre>
 </div>
 
 <h6 id="4-dev模式指定语言">4. dev模式，指定语言</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run dev --lang=zh-CN
-npm start
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm run dev --lang=zh-CN
+$ npm start
 </code></pre>
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run dev --lang=en
-npm start
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm run dev --lang=en
+$ npm start
 </code></pre>
 </div>
 
 <h6 id="5-dev模式指定项目">5. dev模式，指定项目</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run dev --app=dashboard,admin,login
-npm start
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm run dev --app=dashboard,admin,login
+$ npm start
 </code></pre>
 </div>
 
 <h6 id="6-build模式">6. build模式</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run build
-npm start
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm run build
+$ npm start
 </code></pre>
 </div>
 
 <h6 id="7-i18n编译">7. i18n编译</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>npm run transpile
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm run transpile
 </code></pre>
 </div>
 
@@ -245,19 +244,19 @@ npm start
 
 <h6 id="1-查看后端进程列表">1. 查看后端进程列表</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pm2 list
+<div class="highlighter-rouge"><pre class="highlight"><code>$ pm2 list
 </code></pre>
 </div>
 
 <h6 id="2-删除指定后端进程">2. 删除指定后端进程</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pm2 delete id(或者name)
+<div class="highlighter-rouge"><pre class="highlight"><code>$ pm2 delete id(或者name)
 </code></pre>
 </div>
 
 <h6 id="3-查看后端操作log">3. 查看后端操作log</h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pm2 logs
+<div class="highlighter-rouge"><pre class="highlight"><code>$ pm2 logs
 </code></pre>
 </div>
 

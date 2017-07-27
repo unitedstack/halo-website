@@ -52,11 +52,11 @@ body .whole-page .site-content {
   float: left;
 }
 body .whole-page .site-content h2 {
+  height: 70px;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 70px;
   color: #333333;
   letter-spacing: 2.6px;
-  padding-bottom: 30px;
   font-weight: bold;
 }
 body .whole-page .site-content p {
@@ -96,17 +96,21 @@ body .whole-page .site-content a {
   color: #42B9E5;
 }
 body .whole-page .site-content h4 {
+  height: 40px;
   font-size: 18px;
+  line-height: 40px;
   color: #333333;
   letter-spacing: 1px;
-  padding-bottom: 20px;
   font-weight: bold;
 }
 body .whole-page .site-content .highlighter-rouge {
   margin-bottom: 20px;
   background: #F9FBFB;
+  color: #5B7E8B;
   border-radius: 2px;
   overflow: auto;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 body .whole-page .docs-prevnext {
   display: none;
@@ -741,7 +745,7 @@ body .about-content .about-ued .ustack-celebrate {
   }
 }
 .nav-header {
-  background: url(../../img/banner-1.png) no-repeat center center;
+  background: url(../../img/banner-1.png) #0a3047 no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 180px;
@@ -761,13 +765,6 @@ body .about-content .about-ued .ustack-celebrate {
 .nav-header .inner-center .halo-logo img {
   width: 128px;
   height: 44px;
-}
-.nav-header .inner-center .doc {
-  font-size: 32px;
-  color: #ffffff;
-  letter-spacing: 2.13px;
-  line-height: 45px;
-  padding-top: 48px;
 }
 .nav-header .inner-center .x-wrapper {
   display: none;
@@ -794,15 +791,33 @@ body .about-content .about-ued .ustack-celebrate {
 .nav-header .inner-center .breadcrumb .item:last-child {
   margin-right: 0;
 }
+.nav-header-doc {
+  width: 100%;
+  position: relative;
+  top: -75px;
+}
+.nav-header-doc .inner-center {
+  width: 1200px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav-header-doc .inner-center .doc {
+  position: absolute;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 2.13px;
+  line-height: 45px;
+}
 .nav-header-mobile {
   display: none;
 }
 .about-header {
-  background: url(../../img/banner-2.png) no-repeat center center;
+  background: url(../../img/banner-2.png) #0a3047 no-repeat center center;
 }
 .home-header {
   height: 620px;
-  background: url(../../img/bg.png) no-repeat center center;
+  background: url(../../img/bg.png) #010a1b no-repeat center center;
 }
 .home-header .inner-center .introduction {
   width: 100%;
@@ -1134,9 +1149,26 @@ body .about-content .about-ued .ustack-celebrate {
   .home-header-mobile .introduction .introduction-github:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
+  .nav-header-doc {
+    top: -54px;
+  }
+  .nav-header-doc .inner-center {
+    width: 100%;
+    height: 28px;
+  }
+  .nav-header-doc .inner-center .doc {
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1.6px;
+    line-height: 28px;
+    left: 4.2%;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1240px) {
   .nav-header .inner-center {
+    width: 960px;
+  }
+  .nav-header-doc .inner-center {
     width: 960px;
   }
 }
