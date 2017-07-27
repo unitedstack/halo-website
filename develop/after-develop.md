@@ -8,7 +8,7 @@ nextname: 研发学习资料
 
 后端的文件目录所示：
 
-```
+``` javascript
 server
   |-api
   |-boot
@@ -79,7 +79,7 @@ module.exports = driver;
 
 api目录里面都是子项目。目录结构：
 
-```
+``` javascript
 api
   |-index.js
   |-api1
