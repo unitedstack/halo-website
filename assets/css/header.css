@@ -790,6 +790,14 @@ body .about-content .about-ued .ustack-celebrate {
 .nav-header .inner-center .breadcrumb .item:last-child {
   margin-right: 0;
 }
+.nav-header .inner-center .doc {
+  position: absolute;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 2.13px;
+  line-height: 45px;
+  padding-top: 48px;
+}
 .nav-header-doc {
   width: 100%;
   position: relative;
@@ -816,7 +824,7 @@ body .about-content .about-ued .ustack-celebrate {
 }
 .home-header {
   height: 620px;
-  background: url(../../img/bg.png) #010a1b no-repeat center center;
+  background: url(../../img/bg.png) #112d44 no-repeat center center;
 }
 .home-header .inner-center .introduction {
   width: 100%;
