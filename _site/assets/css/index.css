@@ -171,11 +171,10 @@ body .nav-footer .totop {
 }
 body .nav-footer .totop .icon-arrow-up {
   font-size: 30px;
-  color: #797b8b;
 }
 body .nav-footer .totop .icon-arrow-up img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
