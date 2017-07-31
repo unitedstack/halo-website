@@ -8,7 +8,7 @@ nextname: 应用配置
 
 菜单配置文件为左侧二级导航的配置文件。
 
-<img src="../img/develop/menu.png" style="width: 100%">
+<img src="/img/develop/menu.png" style="width: 100%">
 
 其目录在`kunkka/halo/client/{项目名}/config.json`，但该文件被`.gitignore`忽略掉，实际上传到代码库里的是同文件夹下的`config.json.sample`。
 

@@ -127,7 +127,7 @@ body .whole-page .docs-prevnext .docs-prev span {
   width: 16px;
   height: 16px;
   color: #42B9E5;
-  background: url(../../img/prev.png) no-repeat center center;
+  background: url(/img/prev.png) no-repeat center center;
   position: relative;
   top: 2px;
 }
@@ -139,7 +139,7 @@ body .whole-page .docs-prevnext .docs-next span {
   width: 16px;
   height: 16px;
   color: #42B9E5;
-  background: url(../../img/next.png) no-repeat center center;
+  background: url(/img/next.png) no-repeat center center;
   position: relative;
   top: 2px;
 }
@@ -340,7 +340,7 @@ body .home-content .manage .image img {
 }
 body .home-footer {
   height: 706px;
-  background: url(../../img/footer.png) no-repeat;
+  background: url(/img/footer.png) no-repeat;
 }
 body .home-footer .sitemap {
   padding-top: 368px;

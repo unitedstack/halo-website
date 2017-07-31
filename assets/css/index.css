@@ -128,7 +128,7 @@ body .whole-page .docs-prevnext .docs-prev span {
   width: 16px;
   height: 16px;
   color: #42B9E5;
-  background: url(../../img/prev.png) no-repeat center center;
+  background: url(/img/prev.png) no-repeat center center;
   position: relative;
   top: 2px;
 }
@@ -140,7 +140,7 @@ body .whole-page .docs-prevnext .docs-next span {
   width: 16px;
   height: 16px;
   color: #42B9E5;
-  background: url(../../img/next.png) no-repeat center center;
+  background: url(/img/next.png) no-repeat center center;
   position: relative;
   top: 2px;
 }
@@ -341,7 +341,7 @@ body .home-content .manage .image img {
 }
 body .home-footer {
   height: 706px;
-  background: url(../../img/footer.png) no-repeat;
+  background: url(/img/footer.png) no-repeat;
 }
 body .home-footer .sitemap {
   padding-top: 368px;
@@ -783,7 +783,7 @@ body .about-content .about-ued .ustack-celebrate {
   }
 }
 .nav-header {
-  background: url(../../img/banner-1.png) #0a3047 no-repeat center center;
+  background: url(/img/banner-1.png) #0a3047 no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 180px;
@@ -859,11 +859,11 @@ body .about-content .about-ued .ustack-celebrate {
   display: none;
 }
 .about-header {
-  background: url(../../img/banner-2.png) #0a3047 no-repeat center center;
+  background: url(/img/banner-2.png) #0a3047 no-repeat center center;
 }
 .home-header {
   height: 620px;
-  background: url(../../img/bg.png) #112d44 no-repeat center center;
+  background: url(/img/bg.png) #112d44 no-repeat center center;
 }
 .home-header .inner-center .introduction {
   width: 100%;
@@ -936,7 +936,7 @@ body .about-content .about-ued .ustack-celebrate {
     height: 130px;
     font-size: 16px;
     display: block;
-    background: url(../../img/banner-5.png) #0a3047 no-repeat right bottom;
+    background: url(/img/banner-5.png) #0a3047 no-repeat right bottom;
     position: relative;
   }
   .nav-header-mobile .inner-center-mobile {
@@ -1131,10 +1131,10 @@ body .about-content .about-ued .ustack-celebrate {
     display: none;
   }
   .nav-header-mobile-about {
-    background: url(../../img/banner-6.png) #0a3047 no-repeat right bottom;
+    background: url(/img/banner-6.png) #0a3047 no-repeat right bottom;
   }
   .home-header-mobile {
-    background: url(../../img/bg.png) no-repeat center center;
+    background: url(/img/bg.png) no-repeat center center;
     height: 380px;
   }
   .home-header-mobile .introduction {

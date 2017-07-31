@@ -8,7 +8,7 @@ nextname: 弹窗配置
 
 应用配置文件为每个应用的界面布局的配置文件。
 
-<img src="../img/develop/model.png" style="width: 100%">
+<img src="/img/develop/model.png" style="width: 100%">
 
 其目录在`kunkka/halo/client/{项目名}/modules/{模块名}/config.json`，每个应用模块有自己的`config.json`文件支持页面布局。
 
