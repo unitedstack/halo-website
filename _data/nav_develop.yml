@@ -4,31 +4,31 @@
       subitems:
         - id: config
           title: 环境配置
-          href: ../develop/config.html
+          href: /develop/config.html
         - id: miranas
           title: Mirana配置
-          href: ../develop/mirana.html
+          href: /develop/mirana.html
         - id: menu
           title: 菜单配置
-          href: ../develop/menu.html
+          href: /develop/menu.html
         - id: modelf
           title: 应用配置
-          href: ../develop/model.html
+          href: /develop/model.html
         - id: popup
           title: 弹窗配置
-          href: ../develop/popup.html
+          href: /develop/popup.html
     - id: develop
       title: 开发
       subitems:
         - id: front-develop
           title: 前端开发
-          href: ../develop/font-develop.html
+          href: /develop/font-develop.html
         - id: after-develop
           title: 后端开发
-          href: ../develop/after-develop.html
+          href: /develop/after-develop.html
     - id:  appendix
       title: 附录
       subitems:
         - id:  learning-materials
           title: 研发学习资料
-          href: ../develop/learning-materials.html
+          href: /develop/learning-materials.html
