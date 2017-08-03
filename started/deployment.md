@@ -3,6 +3,7 @@ prev: started.html
 next: scripts.html
 prevname: 快速开始
 nextname: 更多命令
+distinction: 快速开始
 ---
 ## 服务器端部署
 

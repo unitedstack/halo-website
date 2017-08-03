@@ -1,6 +1,7 @@
 ---
 next: idea.html
 nextname : 理念
+distinction: 架构
 ---
 ## 起源
 

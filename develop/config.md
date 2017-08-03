@@ -1,6 +1,7 @@
 ---
 next: mirana.html
 nextname: Mirana配置
+distinction: 开发
 ---
 ## 环境配置
 

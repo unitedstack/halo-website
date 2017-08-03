@@ -3,6 +3,7 @@ prev: idea.html
 next: deploy-framework.html
 prevname: 理念
 nextname: 部署架构
+distinction: 架构
 ---
 ## 系统架构
 

@@ -1,6 +1,7 @@
 ---
 prev: deployment.html
 prevname: 服务器端部署
+distinction: 快速开始
 ---
 ## 更多命令
 

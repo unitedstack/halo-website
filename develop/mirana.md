@@ -3,6 +3,7 @@ prev: config.html
 next: menu.html
 prevname: 环境配置
 nextname: 菜单配置
+distinction: 开发
 ---
 ## Mirana配置
 

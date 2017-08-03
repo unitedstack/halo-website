@@ -3,6 +3,7 @@ prev: menu.html
 next: popup.html
 prevname: 菜单配置
 nextname: 弹窗配置
+distinction: 开发
 ---
 ## 应用配置
 

@@ -3,6 +3,7 @@ prev: source.html
 next: deploy-framework.html
 prevname: 起源
 nextname: 系统架构
+distinction: 架构
 ---
 ## 理念
 

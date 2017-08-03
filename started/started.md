@@ -1,6 +1,7 @@
 ---
 next: deployment.html
 nextname: 服务器端部署
+distinction: 快速开始
 ---
 ## 快速开始
 

@@ -3,6 +3,7 @@ prev: mirana.html
 next: model.html
 prevname: Mirana配置
 nextname: 应用配置
+distinction: 开发
 ---
 ## 菜单配置
 

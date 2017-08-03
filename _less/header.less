@@ -42,6 +42,9 @@
         &:last-child {
           margin-right: 0;
         }
+        &#link-active a {
+          color: rgba(255,255,255,1) !important;
+        }
       }
     }
     .doc {
@@ -434,18 +437,7 @@
     }
   }
   .nav-header-doc {
-    top: -54px;
-    .inner-center {
-      width: 100%;
-      height: 28px;
-      .doc {
-        font-size: 20px;
-        color: @white-color;
-        letter-spacing: 1.6px;
-        line-height: 28px;
-        left: 4.2%;
-      }
-    }
+    display: none;
   }
 }
 @media (min-width: 1024px) and (max-width: 1240px) {
