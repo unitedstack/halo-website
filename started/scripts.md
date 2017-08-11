@@ -7,10 +7,11 @@ distinction: 快速开始
 
 #### 安装
 
-###### 1. 手动安装子模块
+###### 1. 更新子模块
 
 ```
-$ git clone git@github.com:unitedstack/halo.git --recursive
+$ git submodule init
+$ git submodule update
 ```
 
 ###### 2. 安装依赖包
