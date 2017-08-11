@@ -5,7 +5,7 @@ distinction: 开发
 ---
 ## 环境配置
 
-对于OpenStack后端对接的配置文件在`kunkka/halo/configs/server.json`。通过修改Keystone、MySQL、Memchaed等地址进行后端对接。
+对于 OpenStack 后端对接的配置文件在`halo/configs/server.json`。通过修改 Keystone、MySQL、Memchaed 等地址进行后端对接。
 
 ``` json
 {
@@ -23,8 +23,8 @@ distinction: 开发
     "maxAge": 604800000          // cookie 过期时间, 默认是一周，保持不变
   },
   "log": {
-    "accessLogPath": "/var/log/kunkka/access.log",  // 访问日志文件路径，请配成 /var/log/kunkka/access.log
-    "errorLogPath": "/var/log/kunkka/error.log",    // 错误日志文件路径, 请配成 /var/log/kunkka/error.log
+    "accessLogPath": "/var/log/halo/access.log",  // 访问日志文件路径，请配成 /var/log/halo/access.log
+    "errorLogPath": "/var/log/halo/error.log",    // 错误日志文件路径, 请配成 /var/log/halo/error.log
     "debug": false,                                   // 生产环境为false，保持默认
     "format": "combined",                            //  默认为combined，保持默认
     "printAccessLog": true                          // true 为打印日志， 保持默认
@@ -42,7 +42,7 @@ distinction: 开发
     }
   ],
   "domain": "default",                  // 默认default， keystone domian信息
-  "port": 5678,                         // kunkka的服务端口，默认5678 保持不变
+  "port": 5678,                         // halo的服务端口，默认5678 保持不变
   "mysql": {                           // mysql 配置
     "host": "lb.XXX.XXX.ustck.in",  // mysql 服务地址, 格式为： lb.XXX.XXX.ustck.in
     "port": 3306,                         //mysql 端口号

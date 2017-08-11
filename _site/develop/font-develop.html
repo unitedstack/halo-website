@@ -188,37 +188,36 @@
     <div class="site-content">
       <h2 id="前端开发">前端开发</h2>
 
-<h4 id="kunkka目录">kunkka目录</h4>
+<h4 id="halo目录">halo目录</h4>
 
-<p>先分析一下<code class="highlighter-rouge">kunkka</code>的文件目录。所有的前端开发代码在<code class="highlighter-rouge">halo/client</code>目录中。其中<code class="highlighter-rouge">applications</code>为每个不同的应用模块`以外，其他文件夹都是通用代码库。</p>
+<p>先分析一下<code class="highlighter-rouge">halo</code>的文件目录。所有的前端开发代码在<code class="highlighter-rouge">halo/client</code>目录中。其中<code class="highlighter-rouge">applications</code>为每个不同的应用模块`以外，其他文件夹都是通用代码库。</p>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">kunkka</span>
-<span class="o">|--</span><span class="nx">halo</span>
-   <span class="o">|--</span><span class="nx">client</span>                  <span class="c1">//前端目录</span>
-      <span class="o">|--</span><span class="nx">applications</span>         <span class="c1">//所有的app都放入applications目录中</span>
-         <span class="o">|--</span><span class="nx">admin</span>
-         <span class="o">|--</span><span class="nx">dashboard</span>
-         <span class="o">|--</span><span class="nx">login</span>
-         <span class="o">|--</span><span class="p">...</span>
-      <span class="o">|--</span><span class="nx">assets</span>               <span class="c1">//所有图片集合</span>
-      <span class="o">|--</span><span class="nx">components</span>           <span class="c1">//halo中频繁使用的自定义React组件</span>
-      <span class="o">|--</span><span class="nx">dist</span>                 <span class="c1">//dev或build后生成的最终CSS、JS、字体、图片等文件</span>
-      <span class="o">|--</span><span class="nx">libs</span>                 <span class="c1">//除了node_modules以外的一些依赖库</span>
-      <span class="o">|--</span><span class="nx">style</span>                <span class="c1">//通用样式</span>
-      <span class="o">|--</span><span class="nx">uskin</span>                <span class="c1">//uskin为React组件库</span>
-      <span class="o">|--</span><span class="nx">utils</span>                <span class="c1">//通用方法</span>
-   <span class="o">|--</span><span class="nx">configs</span>
-   <span class="o">|--</span><span class="nx">locale</span>
-   <span class="o">|--</span><span class="nx">node_modules</span>
-   <span class="o">|--</span><span class="nx">scripts</span>
-   <span class="o">|--</span><span class="nx">server</span>
-   <span class="o">|--</span><span class="nx">tests</span>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">halo</span>
+ <span class="o">|--</span><span class="nx">client</span>                  <span class="c1">//前端目录</span>
+    <span class="o">|--</span><span class="nx">applications</span>         <span class="c1">//所有的app都放入applications目录中</span>
+       <span class="o">|--</span><span class="nx">admin</span>
+       <span class="o">|--</span><span class="nx">dashboard</span>
+       <span class="o">|--</span><span class="nx">login</span>
+       <span class="o">|--</span><span class="p">...</span>
+    <span class="o">|--</span><span class="nx">assets</span>               <span class="c1">//所有图片集合</span>
+    <span class="o">|--</span><span class="nx">components</span>           <span class="c1">//halo中频繁使用的自定义React组件</span>
+    <span class="o">|--</span><span class="nx">dist</span>                 <span class="c1">//dev或build后生成的最终CSS、JS、字体、图片等文件</span>
+    <span class="o">|--</span><span class="nx">libs</span>                 <span class="c1">//除了node_modules以外的一些依赖库</span>
+    <span class="o">|--</span><span class="nx">style</span>                <span class="c1">//通用样式</span>
+    <span class="o">|--</span><span class="nx">uskin</span>                <span class="c1">//uskin为React组件库</span>
+    <span class="o">|--</span><span class="nx">utils</span>                <span class="c1">//通用方法</span>
+ <span class="o">|--</span><span class="nx">configs</span>
+ <span class="o">|--</span><span class="nx">locale</span>
+ <span class="o">|--</span><span class="nx">node_modules</span>
+ <span class="o">|--</span><span class="nx">scripts</span>
+ <span class="o">|--</span><span class="nx">server</span>
+ <span class="o">|--</span><span class="nx">tests</span>
 </code></pre>
 </div>
 
 <h4 id="dashboard目录">dashboard目录</h4>
 
-<p>applications中的每个文件为实际不同的应用，其目录之间结构非常相似。已dashboard为例看一下其文件目录，其路径为<code class="highlighter-rouge">kunkka/halo/client/applications/dashboard</code>。</p>
+<p>applications 中的每个文件为实际不同的应用，其目录之间结构非常相似。以 dashboard 为例看一下其文件目录，其路径为<code class="highlighter-rouge">halo/client/applications/dashboard</code>。</p>
 
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="o">|--</span><span class="nx">dashboard</span>
    <span class="o">|--</span><span class="nx">components</span>              <span class="c1">//dashboard通用组件</span>
@@ -243,7 +242,7 @@
 
 <h4 id="instance目录">instance目录</h4>
 
-<p>modules中的每个文件为每个不同模块的页面，instance作为通用页面与其他绝大部分的模块页面有相似的文件结构。以instance页面为例看一下文件目录结构，其路径为<code class="highlighter-rouge">kunkka/halo/client/applications/dashboard/modules/instance</code>。</p>
+<p>modules 中的每个文件为每个不同模块的页面，instance 作为通用页面与其他绝大部分的模块页面有相似的文件结构。以 instance 页面为例看一下文件目录结构，其路径为<code class="highlighter-rouge">halo/client/applications/dashboard/modules/instance</code>。</p>
 
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="o">|--</span><span class="nx">instance</span>
     <span class="o">|--</span><span class="nx">pop</span>                    <span class="c1">//所有弹窗文件集合</span>
@@ -294,7 +293,6 @@
     <div>
       <h5>快速开始</h5>
       <a href="/started/started.html">快速开始</a>
-      <a href="/started/deployment.html">服务器端部署</a>
       <a href="/started/scripts.html">更多命令</a>
     </div>
     <div>

@@ -188,13 +188,13 @@
     <div class="site-content">
       <h2 id="弹窗配置">弹窗配置</h2>
 
-<p>弹窗是点击面板的按钮之后弹出的交互界面。一般分为默认弹窗的和自定义的弹窗，自定义的弹窗样式可以直接写入样式，在这里介绍默认弹窗为用config文件写出的界面，不需要额外写样式，以下是一个弹窗示例。</p>
+<p>弹窗是点击面板的按钮之后弹出的交互界面。一般分为默认弹窗的和自定义的弹窗，自定义的弹窗样式可以直接写入样式，在这里介绍默认弹窗为用 config 文件写出的界面，不需要额外写样式，以下是一个弹窗示例。</p>
 
 <p style="text-align: center">
-  <img src="/img/develop/popup.png" style="width: 400px" />
+  <img src="/img/develop/popup.png" style="width: 100%" />
 </p>
 
-<p>视图部分的配置文件以<code class="highlighter-rouge">kunkka/halo/client/dashboard/modules/network/pop/create_network/config.json</code>文件举例。</p>
+<p>视图部分的配置文件以<code class="highlighter-rouge">halo/client/dashboard/modules/network/pop/create_network/config.json</code>文件举例。</p>
 
 <div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"create"</span><span class="p">,</span><span class="w"> </span><span class="s2">"prv_network"</span><span class="p">],</span><span class="w">      </span><span class="err">//弹窗的title，自动拼接i18n</span><span class="w">
@@ -247,7 +247,7 @@
 </span></code></pre>
 </div>
 
-<p>逻辑部分的代码以<code class="highlighter-rouge">kunkka/halo/client/dashboard/modules/network/pop/create_network/index.js</code>文件举例。</p>
+<p>逻辑部分的代码以<code class="highlighter-rouge">halo/client/dashboard/modules/network/pop/create_network/index.js</code>文件举例。</p>
 
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">commonModal</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'client/components/modal_common/index'</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./config.json'</span><span class="p">);</span>
@@ -310,7 +310,7 @@
 </code></pre>
 </div>
 
-<p>更多组件和属性可以在<code class="highlighter-rouge">kunkka/halo/client/components/modal_common/subs</code>中查看。</p>
+<p>更多组件和属性可以在<code class="highlighter-rouge">halo/client/components/modal_common/subs</code>中查看。</p>
 
       <div class="docs-prevnext">
         
@@ -345,7 +345,6 @@
     <div>
       <h5>快速开始</h5>
       <a href="/started/started.html">快速开始</a>
-      <a href="/started/deployment.html">服务器端部署</a>
       <a href="/started/scripts.html">更多命令</a>
     </div>
     <div>

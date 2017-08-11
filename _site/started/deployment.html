@@ -142,10 +142,6 @@
               </li>
             
               <li >
-                <a href=/started/deployment.html  class="active" >服务器端部署</a>
-              </li>
-            
-              <li >
                 <a href=/started/scripts.html >更多命令</a>
               </li>
             
@@ -158,11 +154,11 @@
     <div class="site-content">
       <h2 id="服务器端部署">服务器端部署</h2>
 
-<p>对于已配置好的openstack后端环境，可通过部署<code class="highlighter-rouge">kunkka</code>并修改配置进行网页访问。以下介绍两种部署方法。注意，安装HALO之前，请先对服务器进行的环境检测，如需在本地运行，请参考<a href="/started/started.html">快速开始</a>。</p>
+<p>对于已配置好的OpenStack后端环境，可通过部署<code class="highlighter-rouge">halo</code>并修改配置进行网页访问。以下介绍两种部署方法。注意，安装HALO之前，请先对服务器进行的环境检测，如需在本地运行，请参考<a href="/started/started.html">快速开始</a>。</p>
 
 <h2 id="环境检测">环境检测</h2>
 
-<p>部署HALO之前，对服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来Kunkka和Mirana的安装。</p>
+<p>部署HALO之前，对服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来HAlo和Mirana的安装。</p>
 
 <ul>
   <li>检测是否安装<code class="highlighter-rouge">NodeJS</code>，并且是v5或v6版本。若没有，先安装<code class="highlighter-rouge">nvm</code>，通过<code class="highlighter-rouge">nvm</code>安装v5或v6的版本的<code class="highlighter-rouge">NodeJS</code>，若有<code class="highlighter-rouge">NodeJS</code>但版本不对，请用<code class="highlighter-rouge">nvm use 5</code>切换到v5环境中</li>
@@ -173,7 +169,7 @@
 
 <h4 id="安装rpm包">安装rpm包</h4>
 
-<h6 id="1-通过jenkins等部署工具对kunkka和mirana进行打包生成名单最终rpm文件">1. 通过<code class="highlighter-rouge">jenkins</code>等部署工具对<code class="highlighter-rouge">kunkka</code>和<code class="highlighter-rouge">mirana</code>进行打包，生成名单最终<code class="highlighter-rouge">.rpm</code>文件</h6>
+<h6 id="1-通过jenkins等部署工具对halo和mirana进行打包生成名单最终rpm文件">1. 通过<code class="highlighter-rouge">jenkins</code>等部署工具对<code class="highlighter-rouge">halo</code>和<code class="highlighter-rouge">mirana</code>进行打包，生成名单最终<code class="highlighter-rouge">.rpm</code>文件</h6>
 <h6 id="2-复制kunkka状语从句mirana的rpm包到指定的服务器并且进行解压安装">2. 复制<code class="highlighter-rouge">kunkka</code>状语从句：<code class="highlighter-rouge">mirana</code>的<code class="highlighter-rouge">.rpm</code>包到指定的服务器，并且进行解压安装</h6>
 <h6 id="3-进入kunkka运行initsh">3. 进入<code class="highlighter-rouge">kunkka</code>，运行<code class="highlighter-rouge">./init.sh</code></h6>
 <h6 id="4-结束运行后展示进入cd-optkunkkahaloconfigjson根据自己的环境修改配置项">4. 结束运行后展示进入<code class="highlighter-rouge">cd /opt/kunkka/halo/config.json</code>根据自己的环境修改配置项</h6>
@@ -304,8 +300,8 @@
 
 <h6 id="1-下载kunkka和mirana">1. 下载<code class="highlighter-rouge">kunkka</code>和<code class="highlighter-rouge">mirana</code></h6>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone git@gitlab.ustack.com:ued/kunkka.git
-$ git clone git@gitlab.ustack.com:ued/mirana.git
+<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone git@github.com:unitedstack/halo.git
+$ git clone git@github.com:unitedstack/mirana.git
 </code></pre>
 </div>
 <h6 id="2-复制kunkka和mirana到服务器的任意目录中">2. 复制<code class="highlighter-rouge">kunkka</code>和<code class="highlighter-rouge">mirana</code>到服务器的任意目录中</h6>
@@ -347,7 +343,6 @@ $ git clone git@gitlab.ustack.com:ued/mirana.git
     <div>
       <h5>快速开始</h5>
       <a href="/started/started.html">快速开始</a>
-      <a href="/started/deployment.html">服务器端部署</a>
       <a href="/started/scripts.html">更多命令</a>
     </div>
     <div>

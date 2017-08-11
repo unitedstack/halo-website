@@ -7,11 +7,11 @@ distinction: 快速开始
 ---
 ## 服务器端部署
 
-对于已配置好的openstack后端环境，可通过部署`kunkka`并修改配置进行网页访问。以下介绍两种部署方法。注意，安装HALO之前，请先对服务器进行的环境检测，如需在本地运行，请参考[快速开始](/started/started.html)。
+对于已配置好的OpenStack后端环境，可通过部署`halo`并修改配置进行网页访问。以下介绍两种部署方法。注意，安装HALO之前，请先对服务器进行的环境检测，如需在本地运行，请参考[快速开始](/started/started.html)。
 
 ## 环境检测
 
-部署HALO之前，对服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来Kunkka和Mirana的安装。
+部署HALO之前，对服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来HAlo和Mirana的安装。
 
 + 检测是否安装`NodeJS`，并且是v5或v6版本。若没有，先安装`nvm`，通过`nvm`安装v5或v6的版本的`NodeJS`，若有`NodeJS`但版本不对，请用`nvm use 5`切换到v5环境中
 + 检测是否安装`pm2`，若没有，请用`npm install -g pm2`全局安装`pm2`
@@ -20,7 +20,7 @@ distinction: 快速开始
 
 #### 安装rpm包
 
-###### 1. 通过`jenkins`等部署工具对`kunkka`和`mirana`进行打包，生成名单最终`.rpm`文件
+###### 1. 通过`jenkins`等部署工具对`halo`和`mirana`进行打包，生成名单最终`.rpm`文件
 ###### 2. 复制`kunkka`状语从句：`mirana`的`.rpm`包到指定的服务器，并且进行解压安装
 ###### 3. 进入`kunkka`，运行`./init.sh`
 ###### 4. 结束运行后展示进入`cd /opt/kunkka/halo/config.json`根据自己的环境修改配置项
@@ -152,8 +152,8 @@ distinction: 快速开始
 ###### 1. 下载`kunkka`和`mirana`
 
 ```
-$ git clone git@gitlab.ustack.com:ued/kunkka.git
-$ git clone git@gitlab.ustack.com:ued/mirana.git
+$ git clone git@github.com:unitedstack/halo.git
+$ git clone git@github.com:unitedstack/mirana.git
 ```
 ###### 2. 复制`kunkka`和`mirana`到服务器的任意目录中
 ###### 3. 进入`kunkka`，运行`./init.sh`

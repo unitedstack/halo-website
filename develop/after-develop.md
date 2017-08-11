@@ -21,7 +21,7 @@ server
 ```
 #### pm2
 
-pm2作为process manager，可以配置环境变量，将`server`目录加到环境变量中，所以在代码中使用`require('drivers')`便是引用server中的drivers，可以简化书写，修改文件结构时也不用改跟多相对目录。
+pm2 作为 process manager，可以配置环境变量，将`server`目录加到环境变量中，所以在代码中使用`require('drivers')`便是引用 server 中的 drivers，可以简化书写，修改文件结构时也不用改跟多相对目录。
 
 ``` json
  "env": {
@@ -30,9 +30,9 @@ pm2作为process manager，可以配置环境变量，将`server`目录加到环
 ```
 #### boot
 
-node服务的入口，读取配置文件，加载中间件和子项目。
+node 服务的入口，读取配置文件，加载中间件和子项目。
 
-程序目前使用的node框架是express。`const app = express();`得到app；
+程序目前使用的 node 框架是 express。`const app = express();`得到app；
 
 #### middlewares
 
@@ -49,15 +49,15 @@ node服务的入口，读取配置文件，加载中间件和子项目。
 
 #### helpers
 
-包含工具性的一些功能，比如querystring，paginate等，这里的功能供其他项目调用。
+包含工具性的一些功能，比如 querystring，paginate 等，这里的功能供其他项目调用。
 
 #### drivers
 
-此目录中包含子项目，比如数据库连接，openstackAPI封装，它们被api调用时加载。
+此目录中包含子项目，比如数据库连接，OpenStack API 封装，它们被 api 调用时加载。
 
 #### drivers/index.js
 
-当drivers第一次被引用时，执行此文件，他的作用是遍历目录里所有的文件。然后将所有的driver组合起来，引用的方式 `const mysql = require('dirvers').mysql`;
+当 drivers 第一次被引用时，执行此文件，他的作用是遍历目录里所有的文件。然后将所有的 driver 组合起来，引用的方式 `const mysql = require('dirvers').mysql`;
 
 ``` javascript
 let driver = {};
@@ -74,7 +74,7 @@ fs.readdirSync(__dirname)
 module.exports = driver;
 ```
 
-每个driver是一个文件夹，文件夹中有入口`index.js`文件。
+每个 driver 是一个文件夹，文件夹中有入口`index.js`文件。
 
 ## api
 
@@ -113,8 +113,8 @@ module.exports = function (app) {
 ```
 #### api目录
 
-在启动时加载，执行`api/index.js`接收app，然后去遍历所有的目录。 api下面的每个目录都是一个子项目，相互独立解耦，可以自由的增减。
+在启动时加载，执行`api/index.js`接收 app，然后去遍历所有的目录。 api 下面的每个目录都是一个子项目，相互独立解耦，可以自由的增减。
 
 #### api子项目
 
-每个项目都有入口`index.js`文件，他们都暴露一个函数，接收app，然后对app进行处理。 每个项目一般包含：api定义接口，controller处理业务逻辑，models定义数据库表结构。 这里结构也不固定，可能没有数据库或逻辑层很简单。
+每个项目都有入口`index.js`文件，他们都暴露一个函数，接收 app，然后对 app 进行处理。 每个项目一般包含：api 定义接口，controller 处理业务逻辑，models 定义数据库表结构。 这里结构也不固定，可能没有数据库或逻辑层很简单。
