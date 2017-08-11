@@ -11,9 +11,9 @@ distinction: 开发
 
 <img src="/img/develop/model.png" style="width: 100%">
 
-其目录在`kunkka/halo/client/{项目名}/modules/{模块名}/config.json`，每个应用模块有自己的`config.json`文件支持页面布局。
+其目录在`halo/client/{项目名}/modules/{模块名}/config.json`，每个应用模块有自己的`config.json`文件支持页面布局。
 
-以下为`kunkka/halo/client/dashboard/modules/network/config.json`文件举例。
+以下为`halo/client/dashboard/modules/network/config.json`文件举例。
 
 ``` json
 {

@@ -7,13 +7,13 @@ distinction: 开发
 ---
 ## 弹窗配置
 
-弹窗是点击面板的按钮之后弹出的交互界面。一般分为默认弹窗的和自定义的弹窗，自定义的弹窗样式可以直接写入样式，在这里介绍默认弹窗为用config文件写出的界面，不需要额外写样式，以下是一个弹窗示例。
+弹窗是点击面板的按钮之后弹出的交互界面。一般分为默认弹窗的和自定义的弹窗，自定义的弹窗样式可以直接写入样式，在这里介绍默认弹窗为用 config 文件写出的界面，不需要额外写样式，以下是一个弹窗示例。
 
 <p style="text-align: center">
-  <img src="/img/develop/popup.png" style="width: 400px">
+  <img src="/img/develop/popup.png" style="width: 100%">
 </p>
 
-视图部分的配置文件以`kunkka/halo/client/dashboard/modules/network/pop/create_network/config.json`文件举例。
+视图部分的配置文件以`halo/client/dashboard/modules/network/pop/create_network/config.json`文件举例。
 
 ``` json
 {
@@ -66,7 +66,7 @@ distinction: 开发
 }
 ```
 
-逻辑部分的代码以`kunkka/halo/client/dashboard/modules/network/pop/create_network/index.js`文件举例。
+逻辑部分的代码以`halo/client/dashboard/modules/network/pop/create_network/index.js`文件举例。
 
 ``` javascript
 var commonModal = require('client/components/modal_common/index');
@@ -129,4 +129,4 @@ function pop(parent, callback) {                //parent为父级弹窗，callba
 module.exports = pop;
 ```
 
-更多组件和属性可以在`kunkka/halo/client/components/modal_common/subs`中查看。
+更多组件和属性可以在`halo/client/components/modal_common/subs`中查看。

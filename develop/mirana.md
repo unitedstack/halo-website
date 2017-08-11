@@ -7,11 +7,11 @@ distinction: 开发
 ---
 ## Mirana配置
 
-mirana 是dashboard的消息转发系统。
+Mirana 是 dashboard 的消息转发系统。
 
-它后端连接openstack的消息服务，当浏览器访问时与之建立websocket连接。每当后台有消息产生时，推送到浏览器。
+它后端连接 OpenStack 的消息服务，当浏览器访问时与之建立 websocket 连接。每当后台有消息产生时，推送到浏览器。
 
-#### mirana配置文件
+#### Mirana配置文件
 
 ``` json
 {
@@ -36,14 +36,14 @@ mirana 是dashboard的消息转发系统。
 }
 ```
 
-#### mirana安装文档
+#### Mirana安装文档
 
 ``` javascript
-# 依赖：node v5+
+# 依赖 node v5+
 $ git clone git@gitlab.ustack.com:ued/mirana.git
 $ cd mirana
 $ cp config.json.sample config.json
-$ # 修改配置文件config.json
+$ # 修改配置文件 config.json
 $ npm install  # 安装依赖
 $ npm start #启动服务
 ```

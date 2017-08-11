@@ -5,35 +5,35 @@ distinction: 快速开始
 ---
 ## 快速开始
 
-管理平台分为两大项目，kunkka和mirana。kunkka主要负责视窗、交互和逻辑部分，mirana则负责后端的消息推送。当两个项目正确的安装时用户可以使用完整的UOS平台服务。以下介绍kunkka和mirana的本地运行方法。服务器端部署请参考[服务器端部署](/started/deployment.html)。
+管理平台分为两大项目，Halo 和 mirana。Halo 主要负责视窗、交互和逻辑部分，mirana 则负责后端的消息推送。当两个项目正确的安装时用户可以使用完整的 UOS 平台服务。以下介绍 Halo 和 mirana 的本地运行方法。服务器端部署请参考[服务器端部署](/started/deployment.html)。
 
 ## 环境检测
 
-安装HALO之前，对本地或服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来Kunkka和Mirana的安装。
+安装 HALO 之前，对本地或服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来 Halo 和 Mirana 的安装。
 
 + 检测是否安装`NodeJS`，并且是v5或v6版本。若没有，先安装`nvm`，通过`nvm`安装v5或v6的版本的`NodeJS`，若有`NodeJS`但版本不对，请用`nvm use 5`切换到v5环境中
 + 检测是否安装`pm2`，若没有，请用`npm install -g pm2`全局安装`pm2`
 + 检测后端配置文件中`memcached`及`mysql`服务是否正常
-+ 检测后端配置文件中OpenStack的`Keystone`及admin_user、admin_password、admin_projectId是否可用
++ 检测后端配置文件中OpenStack的`Keystone`及 admin_user、admin_password、admin_projectId 是否可用
 
-## Kunkka
+## Halo
 
 #### 1. 下载
 
-从远程代码库里下载项目 `git clone git@gitlab.ustack.com:ued/kunkka.git`
+从远程代码库里下载项目 `git clone git@github.com:unitedstack/halo.git`
 
 #### 2. 安装
 
-+ 远程代码复制到本地后，在kunkka的目录中跑`./init.sh`。该命令运行以下的操作，可能需要较长的时间
-+ 下载halo子模块
-+ 下载uskin子模块
-+ 下载前端和后端的所有子项目（dashboard, admin, slardar等），并且添加eslint pre-commit hook
-+ 安装子模块中的dependencies
++ 远程代码复制到本地后，在 halo 的目录中跑`./init.sh`。该命令运行以下的操作，可能需要较长的时间
++ 下载 uskin 子模块
++ 生成默认的 package.json 和 config.json
++ 下载前端和后端的所有子项目（dashboard, admin, slardar等），并且添加 eslint pre-commit hook
++ 安装子模块中的 dependencies
 + 运行`npm run build`
 
 #### 3. 修改配置
 
-+ 进入`kunkka/halo/config.json`根据自己的环境修改配置项
++ 进入`halo/config.json`根据自己的环境修改配置项
 
 ``` json
 {
@@ -51,8 +51,8 @@ distinction: 快速开始
     "maxAge": 604800000          // cookie 过期时间, 默认是一周，保持不变
   },
   "log": {
-    "accessLogPath": "/var/log/kunkka/access.log",  // 访问日志文件路径，请配成 /var/log/kunkka/access.log
-    "errorLogPath": "/var/log/kunkka/error.log",    // 错误日志文件路径, 请配成 /var/log/kunkka/error.log
+    "accessLogPath": "/var/log/halo/access.log",  // 访问日志文件路径，请配成 /var/log/halo/access.log
+    "errorLogPath": "/var/log/halo/error.log",    // 错误日志文件路径, 请配成 /var/log/halo/error.log
     "debug": false,                                   // 生产环境为false，保持默认
     "format": "combined",                            //  默认为combined，保持默认
     "printAccessLog": true                          // true 为打印日志， 保持默认
@@ -70,7 +70,7 @@ distinction: 快速开始
     }
   ],
   "domain": "default",                  // 默认default， keystone domian信息
-  "port": 5678,                         // kunkka的服务端口，默认5678 保持不变
+  "port": 5678,                         // halo的服务端口，默认5678 保持不变
   "mysql": {                           // mysql 配置
     "host": "lb.XXX.XXX.ustck.in",  // mysql 服务地址, 格式为： lb.XXX.XXX.ustck.in
     "port": 3306,                         //mysql 端口号
@@ -135,7 +135,6 @@ distinction: 快速开始
 
 安装和修改配置完成后，通过以下操作查看项目是否正常运行
 
-+ 进入 `cd halo`
 + 开启后端 `npm start`
 + 访问 `localhost:5678` 查看是否正常运行
 
@@ -144,7 +143,7 @@ distinction: 快速开始
 #### 1. 下载
 
 ```
-$ git clone git@gitlab.ustack.com:ued/mirana.git
+$ git clone git@github.com:unitedstack/mirana.git
 ```
 
 #### 2. 安装
@@ -157,7 +156,7 @@ $ npm install
 
 #### 3. 修改配置
 
-复制配置文件，根据需求修改config.json文件
+复制配置文件，根据需求修改 config.json 文件
 
 ``` json
 {

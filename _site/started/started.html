@@ -142,10 +142,6 @@
               </li>
             
               <li >
-                <a href=/started/deployment.html >服务器端部署</a>
-              </li>
-            
-              <li >
                 <a href=/started/scripts.html >更多命令</a>
               </li>
             
@@ -158,40 +154,40 @@
     <div class="site-content">
       <h2 id="快速开始">快速开始</h2>
 
-<p>管理平台分为两大项目，kunkka和mirana。kunkka主要负责视窗、交互和逻辑部分，mirana则负责后端的消息推送。当两个项目正确的安装时用户可以使用完整的UOS平台服务。以下介绍kunkka和mirana的本地运行方法。服务器端部署请参考<a href="/started/deployment.html">服务器端部署</a>。</p>
+<p>管理平台分为两大项目，Halo 和 mirana。Halo 主要负责视窗、交互和逻辑部分，mirana 则负责后端的消息推送。当两个项目正确的安装时用户可以使用完整的 UOS 平台服务。以下介绍 Halo 和 mirana 的本地运行方法。服务器端部署请参考<a href="/started/deployment.html">服务器端部署</a>。</p>
 
 <h2 id="环境检测">环境检测</h2>
 
-<p>安装HALO之前，对本地或服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来Kunkka和Mirana的安装。</p>
+<p>安装 HALO 之前，对本地或服务器进行以下的环境检测。若每项检测准确无误，可以进行接下来 Halo 和 Mirana 的安装。</p>
 
 <ul>
   <li>检测是否安装<code class="highlighter-rouge">NodeJS</code>，并且是v5或v6版本。若没有，先安装<code class="highlighter-rouge">nvm</code>，通过<code class="highlighter-rouge">nvm</code>安装v5或v6的版本的<code class="highlighter-rouge">NodeJS</code>，若有<code class="highlighter-rouge">NodeJS</code>但版本不对，请用<code class="highlighter-rouge">nvm use 5</code>切换到v5环境中</li>
   <li>检测是否安装<code class="highlighter-rouge">pm2</code>，若没有，请用<code class="highlighter-rouge">npm install -g pm2</code>全局安装<code class="highlighter-rouge">pm2</code></li>
   <li>检测后端配置文件中<code class="highlighter-rouge">memcached</code>及<code class="highlighter-rouge">mysql</code>服务是否正常</li>
-  <li>检测后端配置文件中OpenStack的<code class="highlighter-rouge">Keystone</code>及admin_user、admin_password、admin_projectId是否可用</li>
+  <li>检测后端配置文件中OpenStack的<code class="highlighter-rouge">Keystone</code>及 admin_user、admin_password、admin_projectId 是否可用</li>
 </ul>
 
-<h2 id="kunkka">Kunkka</h2>
+<h2 id="halo">Halo</h2>
 
 <h4 id="1-下载">1. 下载</h4>
 
-<p>从远程代码库里下载项目 <code class="highlighter-rouge">git clone git@gitlab.ustack.com:ued/kunkka.git</code></p>
+<p>从远程代码库里下载项目 <code class="highlighter-rouge">git clone git@github.com:unitedstack/halo.git</code></p>
 
 <h4 id="2-安装">2. 安装</h4>
 
 <ul>
-  <li>远程代码复制到本地后，在kunkka的目录中跑<code class="highlighter-rouge">./init.sh</code>。该命令运行以下的操作，可能需要较长的时间</li>
-  <li>下载halo子模块</li>
-  <li>下载uskin子模块</li>
-  <li>下载前端和后端的所有子项目（dashboard, admin, slardar等），并且添加eslint pre-commit hook</li>
-  <li>安装子模块中的dependencies</li>
+  <li>远程代码复制到本地后，在 halo 的目录中跑<code class="highlighter-rouge">./init.sh</code>。该命令运行以下的操作，可能需要较长的时间</li>
+  <li>下载 uskin 子模块</li>
+  <li>生成默认的 package.json 和 config.json</li>
+  <li>下载前端和后端的所有子项目（dashboard, admin, slardar等），并且添加 eslint pre-commit hook</li>
+  <li>安装子模块中的 dependencies</li>
   <li>运行<code class="highlighter-rouge">npm run build</code></li>
 </ul>
 
 <h4 id="3-修改配置">3. 修改配置</h4>
 
 <ul>
-  <li>进入<code class="highlighter-rouge">kunkka/halo/config.json</code>根据自己的环境修改配置项</li>
+  <li>进入<code class="highlighter-rouge">halo/config.json</code>根据自己的环境修改配置项</li>
 </ul>
 
 <div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
@@ -209,8 +205,8 @@
     </span><span class="nt">"maxAge"</span><span class="p">:</span><span class="w"> </span><span class="mi">604800000</span><span class="w">          </span><span class="err">//</span><span class="w"> </span><span class="err">cookie</span><span class="w"> </span><span class="err">过期时间</span><span class="p">,</span><span class="w"> </span><span class="err">默认是一周，保持不变</span><span class="w">
   </span><span class="err">}</span><span class="p">,</span><span class="w">
   </span><span class="nt">"log"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"accessLogPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/var/log/kunkka/access.log"</span><span class="p">,</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">访问日志文件路径，请配成</span><span class="w"> </span><span class="err">/var/log/kunkka/access.log</span><span class="w">
-    </span><span class="nt">"errorLogPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/var/log/kunkka/error.log"</span><span class="p">,</span><span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">错误日志文件路径,</span><span class="w"> </span><span class="err">请配成</span><span class="w"> </span><span class="err">/var/log/kunkka/error.log</span><span class="w">
+    </span><span class="nt">"accessLogPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/var/log/halo/access.log"</span><span class="p">,</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">访问日志文件路径，请配成</span><span class="w"> </span><span class="err">/var/log/halo/access.log</span><span class="w">
+    </span><span class="nt">"errorLogPath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/var/log/halo/error.log"</span><span class="p">,</span><span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">错误日志文件路径,</span><span class="w"> </span><span class="err">请配成</span><span class="w"> </span><span class="err">/var/log/halo/error.log</span><span class="w">
     </span><span class="nt">"debug"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">                                   </span><span class="err">//</span><span class="w"> </span><span class="err">生产环境为false，保持默认</span><span class="w">
     </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"combined"</span><span class="p">,</span><span class="w">                            </span><span class="err">//</span><span class="w">  </span><span class="err">默认为combined，保持默认</span><span class="w">
     </span><span class="nt">"printAccessLog"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">                          </span><span class="err">//</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="err">为打印日志，</span><span class="w"> </span><span class="err">保持默认</span><span class="w">
@@ -228,7 +224,7 @@
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span><span class="w">                  </span><span class="err">//</span><span class="w"> </span><span class="err">默认default，</span><span class="w"> </span><span class="err">keystone</span><span class="w"> </span><span class="err">domian信息</span><span class="w">
-  </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">5678</span><span class="p">,</span><span class="w">                         </span><span class="err">//</span><span class="w"> </span><span class="err">kunkka的服务端口，默认5678</span><span class="w"> </span><span class="err">保持不变</span><span class="w">
+  </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">5678</span><span class="p">,</span><span class="w">                         </span><span class="err">//</span><span class="w"> </span><span class="err">halo的服务端口，默认5678</span><span class="w"> </span><span class="err">保持不变</span><span class="w">
   </span><span class="nt">"mysql"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">                           </span><span class="err">//</span><span class="w"> </span><span class="err">mysql</span><span class="w"> </span><span class="err">配置</span><span class="w">
     </span><span class="nt">"host"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lb.XXX.XXX.ustck.in"</span><span class="p">,</span><span class="w">  </span><span class="err">//</span><span class="w"> </span><span class="err">mysql</span><span class="w"> </span><span class="err">服务地址,</span><span class="w"> </span><span class="err">格式为：</span><span class="w"> </span><span class="err">lb.XXX.XXX.ustck.in</span><span class="w">
     </span><span class="nt">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">3306</span><span class="p">,</span><span class="w">                         </span><span class="err">//mysql</span><span class="w"> </span><span class="err">端口号</span><span class="w">
@@ -295,7 +291,6 @@
 <p>安装和修改配置完成后，通过以下操作查看项目是否正常运行</p>
 
 <ul>
-  <li>进入 <code class="highlighter-rouge">cd halo</code></li>
   <li>开启后端 <code class="highlighter-rouge">npm start</code></li>
   <li>访问 <code class="highlighter-rouge">localhost:5678</code> 查看是否正常运行</li>
 </ul>
@@ -304,7 +299,7 @@
 
 <h4 id="1-下载-1">1. 下载</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone git@gitlab.ustack.com:ued/mirana.git
+<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone git@github.com:unitedstack/mirana.git
 </code></pre>
 </div>
 
@@ -318,7 +313,7 @@
 
 <h4 id="3-修改配置-1">3. 修改配置</h4>
 
-<p>复制配置文件，根据需求修改config.json文件</p>
+<p>复制配置文件，根据需求修改 config.json 文件</p>
 
 <div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nt">"mq"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -382,7 +377,6 @@
     <div>
       <h5>快速开始</h5>
       <a href="/started/started.html">快速开始</a>
-      <a href="/started/deployment.html">服务器端部署</a>
       <a href="/started/scripts.html">更多命令</a>
     </div>
     <div>

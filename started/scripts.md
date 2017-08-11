@@ -5,14 +5,12 @@ distinction: 快速开始
 ---
 ## 更多命令
 
-以下操作均在 `halo` 目录中运行，注意不是 `kunkka` 目录
-
 #### 安装
 
 ###### 1. 手动安装子模块
 
 ```
-$ git clone git@git.ustack.com:ustack/halo.git --recursive
+$ git clone git@github.com:unitedstack/halo.git --recursive
 ```
 
 ###### 2. 安装依赖包
@@ -51,7 +49,7 @@ $ npm restart
 
 ###### 3. dev模式（默认语言，默认watch所有项目）
 
-``` json
+```
 $ npm run dev
 $ npm start
 ```

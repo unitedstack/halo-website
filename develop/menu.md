@@ -9,13 +9,13 @@ distinction: 开发
 
 菜单配置文件为左侧二级导航的配置文件。
 
-<img src="/img/develop/menu.png" style="width: 100%">
+<img src="/img/dashboard.png" style="width: 100%">
 
-其目录在`kunkka/halo/client/{项目名}/config.json`，但该文件被`.gitignore`忽略掉，实际上传到代码库里的是同文件夹下的`config.json.sample`。
+其目录在`halo/client/{项目名}/config.json`，但该文件被`.gitignore`忽略掉，实际上传到代码库里的是同文件夹下的`config.json.sample`。
 
 如需提交到代码库需要修改`config.json.sample`，在实际开发调试修改`config.json`查看效果。
 
-以下为`kunkka/halo/client/dashboard/config.json`文件举例。
+以下为`halo/client/dashboard/config.json`文件举例。
 
 ``` json
 {
