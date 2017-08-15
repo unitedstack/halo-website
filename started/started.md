@@ -33,7 +33,7 @@ distinction: 快速开始
 
 #### 3. 修改配置
 
-+ 进入`halo/config.json`根据自己的环境修改配置项
++ 进入`configs/server.json`根据自己的环境修改配置项
 
 ``` json
 {
